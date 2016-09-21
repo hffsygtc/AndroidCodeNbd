@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/day_common_background"
+    android:orientation="vertical" >
+
+    <!-- 父评论的布局 -->
+
+    <RelativeLayout
+        android:id="@+id/comment_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/comment_parent_type_layout"
+            android:layout_width="@dimen/comment_type_width"
+            android:layout_height="@dimen/comment_type_height"
+            android:layout_marginLeft="@dimen/comment_padding_30"
+            android:layout_marginTop="@dimen/comment_padding_25"
+            android:background="@drawable/comment_type" >
+
+            <TextView
+                android:id="@+id/comment_type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="精华评论"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_text_size_30" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/comment_parent_comment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment_parent_type_layout"
+            android:paddingBottom="@dimen/comment_padding_15"
+            android:paddingLeft="@dimen/comment_padding_30"
+            android:paddingRight="@dimen/comment_padding_30"
+            android:paddingTop="@dimen/comment_padding_25" >
+
+            <RelativeLayout
+                android:id="@+id/comment_parent_headimg_layout"
+                android:layout_width="@dimen/comment_head_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/comment_parent_headimg"
+                    android:layout_width="@dimen/comment_head_width"
+                    android:layout_height="@dimen/comment_head_width"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/comment_head"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/comment_parent_value_icon"
+                    android:layout_width="@dimen/comment_value_width"
+                    android:layout_height="@dimen/comment_value_height"
+                    android:layout_below="@+id/comment_parent_headimg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/comment_padding_20"
+                    android:background="@drawable/comment_value_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/comment_parent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/comment_padding_20"
+                android:layout_toRightOf="@+id/comment_parent_headimg_layout"
+                android:text="每经网友"
+                android:textColor="@color/paper_title_txt"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <TextView
+                android:id="@+id/comment_parent_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment_parent_name"
+                android:layout_marginLeft="@dimen/comment_padding_20"
+                android:layout_marginTop="@dimen/comment_padding_10"
+                android:layout_toRightOf="@+id/comment_parent_headimg_layout"
+                android:text="2小时前 四川省成都市"
+                android:textColor="@color/custom_grey"
+                android:textSize="@dimen/font_text_size_24" />
+
+            <ImageView
+                android:id="@+id/comment_parent_good_icon"
+                android:layout_width="@dimen/comment_good_width"
+                android:layout_height="@dimen/comment_good_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/comment_good" />
+
+            <TextView
+                android:id="@+id/comment_parent_good_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/comment_parent_good_icon"
+                android:layout_marginRight="@dimen/comment_padding_10"
+                android:layout_toLeftOf="@+id/comment_parent_good_icon"
+                android:text="847"
+                android:textSize="@dimen/font_text_size_24" />
+
+            <TextView
+                android:id="@+id/comment_parent_three_line_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment_parent_location"
+                android:layout_marginLeft="@dimen/comment_padding_20"
+                android:layout_marginTop="@dimen/comment_padding_20"
+                android:layout_toRightOf="@+id/comment_parent_headimg_layout"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textSize="@dimen/font_text_size_32"
+                android:text="这一段文字，没有其他的什么意思，就是用来测试评论内容的布局定位用的," />
+
+            <ImageView
+                android:id="@+id/comment_parent_content_open"
+                android:layout_width="@dimen/comment_more_width"
+                android:layout_height="@dimen/comment_more_height"
+                android:layout_alignBottom="@+id/comment_parent_three_line_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/comment_more" />
+
+            <RelativeLayout
+                android:id="@+id/comment_parent_handle_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/comment_handle_height"
+                android:layout_below="@+id/comment_parent_three_line_content"
+                android:layout_marginLeft="@dimen/comment_padding_20"
+                android:layout_marginTop="@dimen/comment_padding_30"
+                android:layout_toRightOf="@+id/comment_parent_headimg_layout" >
+
+                <RelativeLayout
+                    android:id="@+id/comment_parent_reply_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" >
+
+                    <ImageView
+                        android:id="@+id/comment_handle_icon_reply"
+                        android:layout_width="@dimen/comment_reply_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/comment_reply" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/comment_padding_10"
+                        android:layout_toRightOf="@+id/comment_handle_icon_reply"
+                        android:text="回复"
+                        android:textColor="@color/custom_grey"
+                        android:textSize="@dimen/font_text_size_24" />
+                </RelativeLayout>
+
+<!--                 <RelativeLayout
+                    android:id="@+id/comment_parent_share_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comment_handle_gap"
+                    android:layout_toRightOf="@+id/comment_parent_reply_layout" >
+
+                    <ImageView
+                        android:id="@+id/comment_handle_icon_share"
+                        android:layout_width="@dimen/comment_share_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/comment_share" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/comment_padding_10"
+                        android:layout_toRightOf="@+id/comment_handle_icon_share"
+                        android:text="分享"
+                        android:textColor="@color/custom_grey"
+                        android:textSize="@dimen/font_text_size_24" />
+                </RelativeLayout> -->
+
+                <RelativeLayout
+                    android:id="@+id/comment_parent_alrt_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/comment_handle_gap"
+                    android:layout_toRightOf="@+id/comment_parent_reply_layout" >
+
+                    <ImageView
+                        android:id="@+id/comment_handle_icon_alrt"
+                        android:layout_width="@dimen/comment_alrt_width"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/comment_alrt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/comment_padding_10"
+                        android:layout_toRightOf="@+id/comment_handle_icon_alrt"
+                        android:text="举报"
+                        android:textColor="@color/custom_grey"
+                        android:textSize="@dimen/font_text_size_24" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/comment_parent_gap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_padding_15"
+            android:layout_below="@+id/comment_parent_comment_layout" />
+
+        <TextView
+            android:id="@+id/comment_parent_divline"
+            android:layout_width="@dimen/comment_divline_width"
+            android:layout_height="@dimen/comment_divline_height"
+            android:layout_below="@+id/comment_parent_gap"
+            android:background="@drawable/comment_divline_big" />
+    </RelativeLayout>
+
+    <!-- 子评论布局 -->
+
+    <RelativeLayout
+        android:id="@+id/comment_child_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/comment_child_left_padding"
+        android:layout_marginRight="@dimen/comment_padding_30" >
+
+        <TextView
+            android:id="@+id/comment_child_angle_gap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_child_top_angle_gap"
+            android:layout_alignParentTop="true" />
+
+        <RelativeLayout
+            android:id="@+id/comment_child_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment_child_angle_gap"
+            android:background="@drawable/comment_child_top"
+            android:paddingLeft="@dimen/comment_padding_25"
+            android:paddingRight="@dimen/comment_padding_25"
+            android:paddingTop="@dimen/comment_padding_25" >
+
+            <TextView
+                android:id="@+id/comment_child_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="奥巴牛"
+                android:textColor="@color/paper_title_txt"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <TextView
+                android:id="@+id/comment_child_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/comment_child_name"
+                android:layout_marginTop="@dimen/comment_padding_10"
+                android:text="2小时前 四川省成都市"
+                android:textColor="@color/custom_grey"
+                android:textSize="@dimen/font_text_size_24" />
+
+            <TextView
+                android:id="@+id/comment_child_position_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/comment_child_name"
+                android:layout_alignParentRight="true"
+                android:background="@color/custom_grey_white"
+                android:paddingLeft="@dimen/comment_child_position_text_padding"
+                android:paddingRight="@dimen/comment_child_position_text_padding"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_text_size_24" />
+
+            <TextView
+                android:id="@+id/comment_child_three_line_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment_child_location"
+                android:layout_marginTop="@dimen/comment_padding_20"
+                android:textSize="@dimen/font_text_size_32"
+                android:text="这一段文字，没有其他的什么意思，就是用来测试评论内容的布局定位用的," />
+
+            <TextView
+                android:id="@+id/comment_child_bottom_gap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/comment_padding_25"
+                android:layout_below="@+id/comment_child_three_line_content" />
+
+            <TextView
+                android:id="@+id/comment_child_divline"
+                android:layout_width="@dimen/comment_divline_width_smal"
+                android:layout_height="@dimen/comment_divline_height"
+                android:layout_below="@+id/comment_child_bottom_gap"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/comment_divline_small" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/comment_child_top_angle"
+            android:layout_width="@dimen/comment_child_top_angle_width"
+            android:layout_height="@dimen/comment_child_top_angle_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/comment_padding_30"
+            android:background="@drawable/comment_child_angle" />
+    </RelativeLayout>
+
+</LinearLayout>

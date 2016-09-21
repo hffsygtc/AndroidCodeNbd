@@ -1,0 +1,132 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item> <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="DayTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item> <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="newsBackground">@color/day_common_background</item>
+        <item name="newsSelfPageBg">@color/day_section_background</item>
+        <item name="newsSelfItemBg">@color/day_item_background</item>
+        <item name="newsSectionBg">@color/day_section_background</item>
+        <item name="newsTextBlack">@color/day_black</item>
+        <item name="newsCover">@color/day_cover</item>
+        <item name="newsItemClickBg">@drawable/news_item_click_selector_day</item>
+        <item name="newsFeatureTagBg">@drawable/feature_tag_text_shape</item>
+
+        <!--
+        <item name="newsDetailBottomBgColor">@color/light_news_detail_bottom_bg</item>
+        <item name="newsPageBgColor">@drawable/fast_list_item_click_light_selector</item>
+        <item name="newsTextColor">@color/light_news_text_color</item>
+        <item name="newsCommentColor">@color/light_news_comment_color</item>
+        <item name="newsTextHightlightColor">@color/light_news_highlight_color</item>
+        -->
+    </style>
+
+    <style name="NightTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item> <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="newsBackground">@color/night_common_background</item>
+        <item name="newsSectionBg">@color/night_section_background</item>
+        <item name="newsSelfPageBg">@color/night_common_background</item>
+        <item name="newsSelfItemBg">@color/night_section_background</item>
+        <item name="newsTextBlack">@color/night_black</item>
+        <item name="newsCover">@color/night_cover</item>
+        <item name="newsItemClickBg">@drawable/news_item_click_selector_night</item>
+               <item name="newsFeatureTagBg">@drawable/feature_tag_text_shape_night</item>
+        <!--
+        <item name="newsDetailBottomBgColor">@color/light_title_bg</item>
+        <item name="newsPageBgColor">@color/night_page_bg</item>
+        <item name="newsTextColor">@color/night_news_text_color</item>
+        <item name="newsCommentColor">@color/night_news_comment_color</item>
+        <item name="newsTextHightlightColor">@color/night_news_highlight_color</item>
+        -->
+    </style>
+
+    <style name="radio_btn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/font_text_size_22</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:drawablePadding">1dp</item>
+        <item name="android:padding">@dimen/tab_padding</item>
+        <!-- <item name="android:padd"></item> -->
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/calender_dialog_trans_bg</item>
+        <item name="android:backgroundDimEnabled">false</item> <!-- 模糊 -->
+    </style>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/calender_dialog_trans_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="headdialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/halftransparent</item>
+        <item name="android:backgroundDimEnabled">false</item> <!-- 模糊 -->
+    </style>
+
+    <style name="Switch">
+        <item name="track">@drawable/switch_btn</item>
+        <item name="thumb">@drawable/switch_top_circle</item>
+        <item name="switchMinWidth">@dimen/self_center_attr_switch_width</item> <!-- switch 的宽度 -->
+        <item name="switchHeight">@dimen/self_center_attr_switch_height</item>
+        <item name="circleWidth">@dimen/self_center_attr_switch_circle_width</item>
+        <item name="android:background">#00FFFFFF</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/register_checkbox_selector</item>
+    </style>
+
+    <style name="HintPasswordTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/hint_password_checkbox_selector</item>
+    </style>
+    
+     <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+
+</resources>

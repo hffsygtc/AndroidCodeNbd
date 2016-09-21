@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cmf-sdk-1.0.29-arm32">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LePlayerSdk/libs/cmf-sdk-1.0.29-arm32.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

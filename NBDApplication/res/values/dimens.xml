@@ -1,0 +1,702 @@
+<resources>
+
+    <!--
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="bottom_radio_height">45dp</dimen>
+    <dimen name="tab_image_height">18dp</dimen>
+    <dimen name="tab_image_width">18dp</dimen>
+    <dimen name="tab_padding">6dp</dimen>
+    <dimen name="bottom_tab_leftpadding">8dp</dimen>
+    <dimen name="bottom_self_img_size">41dp</dimen>
+
+    <dimen name="custom_page_hor_padding">10dp</dimen>
+    <dimen name="custom_page_ver_padding">12.5dp</dimen>
+    <dimen name="custom_page_ver_padding_plus_title_cover">10dp</dimen>
+    <dimen name="custom_page_ver_padding_plus_cover">4.5dp</dimen>
+    <dimen name="custom_divline_width">0.5dp</dimen>
+    <dimen name="custom_news_title_ver_gap">8dp</dimen>
+    <dimen name="custom_news_gap_40">20dp</dimen>
+
+    <dimen name="news_title_layout_height">47dp</dimen>
+    <dimen name="news_title_height">44dp</dimen>
+    <dimen name="news_title_left_gap">20dp</dimen>
+    <dimen name="news_title_item_img_width">18dp</dimen>
+    <dimen name="news_title_item_imglayout_width">38dp</dimen>
+    <dimen name="news_title_tab_width">316dp</dimen>
+    <dimen name="news_title_txt_left_gap">15dp</dimen>
+
+    <dimen name="news_viewpager_textbg_height">84dp</dimen>
+    <dimen name="news_viewpager_text_bottom_gap">37dp</dimen>
+    <dimen name="news_viewpager_text_bottom_height">18dp</dimen>
+    <dimen name="news_viewpager_point_radius">2dp</dimen>
+    <dimen name="news_viewpager_point_double_radius">4dp</dimen>
+    <dimen name="news_viewpager_point_bottom_gap">17dp</dimen>
+    <dimen name="news_viewpager_pointlayout_width">27dp</dimen>
+
+
+
+    <dimen name="toggle_section_div_height">13.5dp</dimen>
+    <dimen name="toggle_section_div_width">1dp</dimen>
+    <dimen name="toggle_section_height">34dp</dimen>
+
+    <dimen name="kx_section_height">30dp</dimen>
+    <dimen name="kx_section_imgwidth">8dp</dimen>
+    <dimen name="kx_section_imgheight">30dp</dimen>
+    <dimen name="kx_section_left_padding">10dp</dimen>
+    <dimen name="kx_item_left_padding">10dp</dimen>
+    <dimen name="kx_item_top_padding">12.5dp</dimen>
+    <dimen name="kx_item_text_gap">12.5dp</dimen>
+    <dimen name="kx_item_tags_left_padding">50dp</dimen>
+    <dimen name="kx_item_tags_right_padding">10dp</dimen>
+    <dimen name="kx_item_tags_height">44dp</dimen>
+    <dimen name="kx_item_divline_gap">50dp</dimen>
+    <dimen name="kx_item_tags_gap">10dp</dimen>
+    <dimen name="kx_item_tags_read_width">98dp</dimen>
+    <dimen name="kx_item_share_width">15dp</dimen>
+    <dimen name="kx_item_tags_share_width">52dp</dimen>
+    <dimen name="fast_section_line_width">123dp</dimen>
+    <dimen name="fast_section_line_height">2.5dp</dimen>
+    <dimen name="fast_section_ver_gap">10dp</dimen>
+    <dimen name="fast_section_txt_layout_height">17.5dp</dimen>
+    <dimen name="fast_item_time_layout_height">15dp</dimen>
+    <dimen name="fast_item_time_tag_width">5dp</dimen>
+    <dimen name="fast_item_time_tag_height">13dp</dimen>
+    <dimen name="fast_item_share_layout_height">25dp</dimen>
+
+
+    <dimen name="news_hor_gap">10dp</dimen>
+    <dimen name="news_viewpager_height">203dp</dimen>
+    <dimen name="news_gppoint_height">88dp</dimen>
+    <dimen name="news_gppoint_horpadding">25dp</dimen>
+    <dimen name="news_gppoint_bottom_gap">8dp</dimen>
+    <dimen name="news_gppoint_verpadding">10dp</dimen>
+    <dimen name="news_item_height">92dp</dimen>
+    <dimen name="news_item_image_height">68dp</dimen>
+    <dimen name="news_item_image_double_height">136dp</dimen>
+    <dimen name="news_item_image_width">102dp</dimen>
+    <dimen name="news_item_padding">12dp</dimen>
+    <dimen name="news_item_gap">15dp</dimen>
+    <dimen name="news_item_lab_height">15dp</dimen>
+    <dimen name="news_item_lab_width">24dp</dimen>
+    <dimen name="news_item_first_lab_gap">12dp</dimen>
+    <dimen name="news_item_lab_gap">3dp</dimen>
+    <dimen name="news_item_video_width">15dp</dimen>
+    <dimen name="news_item_comment_width">14dp</dimen>
+    <dimen name="news_item_comment_height">11dp</dimen>
+    <dimen name="news_item_comment_layout_height">12dp</dimen>
+    <dimen name="news_item_comment_gap">6dp</dimen>
+    <dimen name="news_item_tags_width">27dp</dimen>
+    <dimen name="news_item_book_tags_width">37dp</dimen>
+    <dimen name="news_item_tags_height">15dp</dimen>
+    <dimen name="news_item_threepic_layout_height">76dp</dimen>
+    <dimen name="news_item_threepic_gap">2dp</dimen>
+    <dimen name="news_item_adv_title_width">308dp</dimen>
+    
+    <dimen name="news_item_large_pic_height">178dp</dimen>
+    <dimen name="news_item_large_pic_num_width">73dp</dimen>
+    <dimen name="news_item_large_pic_num_height">30dp</dimen>
+
+    <dimen name="video_item_height">237.5dp</dimen>
+    <dimen name="video_image_layout_height">179dp</dimen>
+    <dimen name="video_paly_image_length">44dp</dimen>
+    <dimen name="video_bottom_layout_height">46dp</dimen>
+    <dimen name="video_btm_image_length">19dp</dimen>
+    <dimen name="video_btm_mid_image_length">22dp</dimen>
+    <dimen name="video_btm_mid_image_width">1.4dp</dimen>
+    <dimen name="main_video_player_width">340dp</dimen>
+    <dimen name="main_video_player_height">179dp</dimen>
+
+    <dimen name="main_paper_calender_height">128dp</dimen>
+    <dimen name="main_paper_calender_width">356dp</dimen>
+    <dimen name="main_paper_calender_content_width">320dp</dimen>
+    <dimen name="main_paper_calender_ver_gap">8dp</dimen>
+    <dimen name="main_paper_calender_ver_open_gap">5dp</dimen>
+    <dimen name="main_paper_calender_topmonth_width">141.5dp</dimen>
+    <dimen name="main_paper_calender_topmonth_height">23dp</dimen>
+    <dimen name="main_paper_calender_btmopen_heigth">12dp</dimen>
+    <dimen name="main_paper_calender_btmopen_width">56dp</dimen>
+    <dimen name="main_paper_calender_montn_change_icon_width">6dp</dimen>
+    <dimen name="main_paper_calender_montn_change_icon_height">10dp</dimen>
+    <dimen name="main_paper_calender_montn_icon_width">26dp</dimen>
+    <dimen name="main_paper_title_layout_height">32dp</dimen>
+    <dimen name="main_paper_title_point_length">5.5dp</dimen>
+    <dimen name="main_paper_bottom_gap">13dp</dimen>
+    <dimen name="calender_dialog_dataline_height">36dp</dimen>
+    <dimen name="calender_dialog_height">308dp</dimen>
+    <dimen name="main_paper_content_width">210.5dp</dimen>
+    <dimen name="main_paper_content_height">336dp</dimen>
+    <dimen name="main_paper_paper_width">186dp</dimen>
+    <dimen name="main_paper_paper_height">271dp</dimen>
+
+    <dimen name="main_feature_item_height">140dp</dimen>
+    <dimen name="main_feature_img_layout_height">143dp</dimen>
+    <dimen name="main_feature_img_layout_width">356dp</dimen>
+    <dimen name="main_feature_img_height">127dp</dimen>
+    <dimen name="main_feature_img_width">340dp</dimen>
+    <dimen name="main_feature_img_ver_gap">8dp</dimen>
+
+    <dimen name="news_detail_title_height">47.5dp</dimen>
+    <dimen name="news_detail_bottom_height">50dp</dimen>
+    <dimen name="news_detail_hor_padding">15dp</dimen>
+    <dimen name="news_detail_backarrow_height">21dp</dimen>
+    <dimen name="news_detail_backarrow_width">21dp</dimen>
+    <dimen name="news_detail_more_width">5dp</dimen>
+    <dimen name="news_detail_more_height">21dp</dimen>
+    <dimen name="news_detail_title_line">1.5dp</dimen>
+    <dimen name="news_detail_edittext_height">31dp</dimen>
+    <dimen name="news_detail_share_width">19dp</dimen>
+    <dimen name="news_detail_gap_25">12.5dp</dimen>
+    <dimen name="news_detail_gap_22">11dp</dimen>
+    <dimen name="news_detail_comment_height">24dp</dimen>
+    <dimen name="news_detail_comment_icon_width">12dp</dimen>
+    <dimen name="news_detail_comment_icon_height">14dp</dimen>
+
+    <dimen name="font_text_size_18">9sp</dimen>
+    <dimen name="font_text_size_20">10sp</dimen>
+    <dimen name="font_text_size_22">11sp</dimen>
+    <dimen name="font_text_size_24">12sp</dimen>
+    <dimen name="font_text_size_26">13sp</dimen>
+    <dimen name="font_text_size_28">14sp</dimen>
+    <dimen name="font_text_size_30">15sp</dimen>
+    <dimen name="font_text_size_32">16sp</dimen>
+    <dimen name="font_text_size_36">18sp</dimen>
+    <dimen name="font_text_size_38">19sp</dimen>
+    <dimen name="font_text_size_40">20sp</dimen>
+
+    <dimen name="self_center_hor_padding">20dp</dimen>
+    <dimen name="self_center_ver_padding">12.5dp</dimen>
+    <dimen name="self_center_ver_padding_min">4dp</dimen>
+    <dimen name="self_center_top_padding">17.5dp</dimen>
+    <dimen name="self_center_headimg_top_padding">35dp</dimen>
+    <dimen name="self_center_headimg_bottom_padding">10dp</dimen>
+    <dimen name="self_center_top_four_height">65dp</dimen>
+    <dimen name="self_center_item_height">46dp</dimen>
+    <dimen name="feedbacks_content_height">184dp</dimen>
+    <dimen name="self_center_item_hor_gap">15dp</dimen>
+    <dimen name="self_center_back_btn_width">21dp</dimen>
+    <dimen name="self_center_headimg_circle_width">80dp</dimen>
+    <dimen name="self_center_headimg_width">72dp</dimen>
+    <dimen name="self_center_top_four_item_heigth">19dp</dimen>
+    <dimen name="self_center_top_four_width_54">27dp</dimen>
+    <dimen name="self_center_top_four_width_40">20dp</dimen>
+    <dimen name="self_center_item_tag_width">18dp</dimen>
+    <dimen name="self_center_item_tag_height_28">14dp</dimen>
+    <dimen name="self_center_item_mymsg_width">21dp</dimen>
+    <dimen name="self_center_attr_switch_height">16dp</dimen>
+    <dimen name="self_center_attr_switch_width">35dp</dimen>
+    <dimen name="self_center_attr_switch_circle_width">25dp</dimen>
+    <dimen name="self_center_switch_width">80dp</dimen>
+    <dimen name="self_center_switch_height">25dp</dimen>
+    <dimen name="self_center_switch_right_margin">8dp</dimen>
+    <dimen name="self_setting_title_height">59dp</dimen>
+    <dimen name="self_setting_top_margin">61dp</dimen>
+    <dimen name="self_setting_head_layout_height">92dp</dimen>
+    <dimen name="self_enter_arrow_width">8dp</dimen>
+    <dimen name="self_enter_arrow_height">12.5dp</dimen>
+    <dimen name="self_setting_right_margin">38dp</dimen>
+    <dimen name="self_setting_exit_top_margin">25dp</dimen>
+    <dimen name="self_setting_exit_width">336dp</dimen>
+    <dimen name="self_setting_exit_height">60dp</dimen>
+
+    <dimen name="login_user_tag_width">16dp</dimen>
+    <dimen name="login_user_tag_left">30dp</dimen>
+    <dimen name="login_password_tag_width">14dp</dimen>
+    <dimen name="login_password_tag_left">31dp</dimen>
+    <dimen name="login_password_tag_right">22dp</dimen>
+    <dimen name="login_tag_height">18dp</dimen>
+    <dimen name="login_ver_little_gap">12.5dp</dimen>
+    <dimen name="login_button_width">337dp</dimen>
+    <dimen name="login_button_height">60dp</dimen>
+    <dimen name="login_button_top_margin">31dp</dimen>
+    <dimen name="login_button_top_register_password_gap">22dp</dimen>
+    <dimen name="login_other_method_layout_height">93dp</dimen>
+    <dimen name="login_other_method_layout_top_margin">40dp</dimen>
+    <dimen name="login_other_method_title_top_margin">20dp</dimen>
+    <dimen name="login_other_method_img_width">42dp</dimen>
+   
+    <dimen name="register_get_phone_num_width">86dp</dimen>
+    <dimen name="register_get_phone_num_height">28dp</dimen>
+    <dimen name="register_agree_tips_layout_height">38dp</dimen>
+    <dimen name="register_agree_checkbox_width">18dp</dimen>
+    <dimen name="register_agree_checkbox_gap">10dp</dimen>
+    <dimen name="register_password_hint_checkbox_width">26dp</dimen>
+ 
+    
+    <dimen name="self_message_toggle_line_width">143dp</dimen>
+    <dimen name="self_message_toggle_line_height">2dp</dimen>
+    <dimen name="self_message_toggle_line_gap">3dp</dimen>
+
+    <dimen name="self_message_item_top_height">28dp</dimen>
+    <dimen name="self_message_item_top_gap">6dp</dimen>
+    <dimen name="self_message_item_botom_gap">12dp</dimen>
+    <dimen name="self_message_item_hor_gap">20dp</dimen>
+    
+    
+    <dimen name="feature_deatil_title_height">56dp</dimen>
+    <dimen name="feature_deatil_title_share_width">19dp</dimen>
+    <dimen name="feature_deatil_top_img_height">107dp</dimen>
+    <dimen name="feature_deatil_ver_gap">12.5dp</dimen>
+    <dimen name="feature_deatil_hor_padding">10dp</dimen>
+    <dimen name="feature_deatil_ver_padding">12.5dp</dimen>
+    <dimen name="feature_deatil_news_tag_width">70dp</dimen>
+    <dimen name="feature_deatil_news_tags_top_height">55dp</dimen>
+    <dimen name="feature_deatil_news_tags_btm_height">43dp</dimen>
+    <dimen name="feature_deatil_tag_width">75dp</dimen>
+    <dimen name="feature_deatil_tag_height">30dp</dimen>
+    <dimen name="feature_deatil_tag_gap">10dp</dimen>
+    
+   
+    <dimen name="gallery_activity_top_gap">66dp</dimen>
+    <dimen name="gallery_activity_bottom_gap">50dp</dimen>
+    <dimen name="gallery_activity_image_height">385dp</dimen>
+    <dimen name="gallery_activity_text_top_gap">15dp</dimen>
+    <dimen name="gallery_activity_text_hor_padding">5dp</dimen>
+    <dimen name="gallery_activity_text_ver_gap">12.5dp</dimen>
+    <dimen name="gallery_activity_content_top_height">40dp</dimen>
+    <dimen name="gallery_activity_title_width">300dp</dimen>
+    <dimen name="gallery_activity_bottom_content_height">122dp</dimen>
+    
+    <dimen name="article_dialog_cancle_height">48dp</dimen>
+    <dimen name="alrlt_dialog_height">120dp</dimen>
+    <dimen name="alrlt_dialog_width">250dp</dimen>
+    <dimen name="article_dialog_top_layout_height">265dp</dimen>
+    <dimen name="article_dialog_setting_text_top_layout_height">57dp</dimen>
+    <dimen name="webview_dialog_top_layout_height">220dp</dimen>
+    <dimen name="article_dialog_left_padding">20dp</dimen>
+    <dimen name="article_dialog_left_padding_min">5dp</dimen>
+    <dimen name="article_dialog_text_ver_gap">7.5dp</dimen>
+    <dimen name="article_dialog_share_height">104dp</dimen>
+    <dimen name="article_dialog_text_size_height">56dp</dimen>
+    <dimen name="article_dialog_item_width">58.5dp</dimen>
+    <dimen name="article_dialog_item_layout_width">88.5dp</dimen>
+    <dimen name="article_dialog_item_A_widtn">12dp</dimen>
+    <dimen name="article_dialog_item_A_height">11dp</dimen>
+    <dimen name="article_dialog_item_textline_width">265dp</dimen>
+    <dimen name="article_dialog_item_textline_height">16dp</dimen>
+    <dimen name="article_dialog_item_textline_circle_big">10.5dp</dimen>
+    <dimen name="article_dialog_item_textline_circle_small">3.5dp</dimen>
+
+    
+    <dimen name="collection_normal_news_item_height">85dp</dimen>
+    <dimen name="reading_news_item_height">60dp</dimen>
+    <dimen name="search_activity_search_layout_width">38dp</dimen>
+    <dimen name="search_activity_search_icon_width">18dp</dimen>
+    <dimen name="search_activity_ver_padding">25dp</dimen>
+    <dimen name="search_activity_circle_width">150dp</dimen>
+    <dimen name="search_activity_circle_height">30dp</dimen>
+    
+    
+    <dimen name="dialog_item_height">58dp</dimen>
+    <dimen name="dialog_item_layout_height">117dp</dimen>
+    <dimen name="dialog_item_cancle_height">49dp</dimen>
+    
+    <dimen name="comment_type_width">75dp</dimen>
+    <dimen name="comment_type_height">22dp</dimen>
+    <dimen name="comment_padding_30">15dp</dimen>
+    <dimen name="comment_padding_25">12.5dp</dimen>
+    <dimen name="comment_padding_20">10dp</dimen>
+    <dimen name="comment_padding_15">7.5dp</dimen>
+    <dimen name="comment_padding_10">5dp</dimen>
+    <dimen name="comment_head_width">30dp</dimen>
+    <dimen name="comment_good_width">15dp</dimen>
+    <dimen name="comment_good_height">13.5dp</dimen>
+    <dimen name="comment_value_width">20dp</dimen>
+    <dimen name="comment_value_height">31dp</dimen>
+    <dimen name="comment_more_width">30dp</dimen>
+    <dimen name="comment_more_height">15dp</dimen>
+    <dimen name="comment_handle_height">14dp</dimen>
+    <dimen name="comment_handle_gap">35dp</dimen>
+    <dimen name="comment_reply_width">16dp</dimen>
+    <dimen name="comment_share_width">14dp</dimen>
+    <dimen name="comment_alrt_width">12dp</dimen>
+    <dimen name="comment_divline_width">330dp</dimen>
+    <dimen name="comment_divline_height">1.5dp</dimen>
+    <dimen name="comment_divline_width_smal">275dp</dimen>
+    <dimen name="comment_child_left_padding">55dp</dimen>
+    <dimen name="comment_child_top_angle_width">9.5dp</dimen>
+    <dimen name="comment_child_top_angle_height">7.5dp</dimen>
+    <dimen name="comment_child_top_angle_gap">6dp</dimen>
+    <dimen name="comment_child_position_text_padding">3dp</dimen>
+   
+    <dimen name="comment_input_layout_height">170dp</dimen>
+    <dimen name="comment_input_layout_bottom_height">270dp</dimen>
+    <dimen name="comment_input_height">110dp</dimen>
+    <dimen name="comment_input_send_height">22.5dp</dimen>
+    <dimen name="comment_input_send_width">56dp</dimen>
+    <dimen name="comment_top_gap">160dp</dimen>
+    
+    
+    <dimen name="jb_default_width">111dp</dimen>
+    <dimen name="jb_default_height">60dp</dimen>
+    
+    <dimen name="news_ad_width">340dp</dimen>
+    
+    <dimen name="sign_center_head_height">185dp</dimen>
+    
+    
+    <dimen name="fragment_bg_logo_width">100dp</dimen>
+    <dimen name="fragment_bg_logo_height">164dp</dimen>
+    
+        <dimen name="pull_down_head_height">60dp</dimen>
+    <dimen name="pull_down_head_gap">30dp</dimen>
+    -->
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">48px</dimen>
+    <dimen name="activity_vertical_margin">48px</dimen>
+
+    <!-- 底部四个选项卡、个人中心图标属性 -->
+    <dimen name="bottom_radio_height">135px</dimen>
+    <dimen name="tab_image_height">54px</dimen>
+    <dimen name="tab_image_width">54px</dimen>
+    <dimen name="tab_padding">18px</dimen>
+    <dimen name="bottom_tab_leftpadding">24px</dimen>
+    <dimen name="bottom_self_img_size">123px</dimen>
+
+    <!-- 页面风格类的统一间距 -->
+    <dimen name="custom_page_hor_padding">30px</dimen>
+    <dimen name="custom_page_ver_padding">37.5px</dimen>
+    <dimen name="custom_page_ver_padding_plus_title_cover">30px</dimen>
+    <dimen name="custom_page_ver_padding_plus_cover">13.5px</dimen>
+    <dimen name="custom_divline_width">1.5px</dimen>
+
+    <!-- =============新闻栏目界面相关属性================= -->
+    <dimen name="news_title_layout_height">141px</dimen>
+    <dimen name="news_title_height">132px</dimen>
+    <dimen name="news_title_left_gap">60px</dimen>
+    <dimen name="news_title_item_img_width">54px</dimen>
+    <dimen name="news_title_item_imglayout_width">114px</dimen>
+    <dimen name="news_title_tab_width">948px</dimen>
+    <dimen name="news_title_txt_left_gap">45px</dimen>
+
+    <!-- 顶部滑动的pager属性 -->
+    <dimen name="news_viewpager_textbg_height">152px</dimen>
+    <dimen name="news_viewpager_text_bottom_gap">117px</dimen>
+    <dimen name="news_viewpager_text_bottom_height">54px</dimen>
+    <dimen name="news_viewpager_point_radius">6px</dimen>
+    <dimen name="news_viewpager_point_double_radius">12px</dimen>
+    <dimen name="news_viewpager_point_bottom_gap">51px</dimen>
+    <dimen name="news_viewpager_pointlayout_width">81px</dimen>
+
+    <!-- 证券栏相关属性 -->
+
+
+    <!-- 双切换了悬停栏属性 -->
+    <dimen name="toggle_section_div_height">40.5px</dimen>
+    <dimen name="toggle_section_div_width">3px</dimen>
+    <dimen name="toggle_section_height">102px</dimen>
+
+    <!-- 快讯栏目时间条锁定栏属性 -->
+    <dimen name="kx_section_height">90px</dimen>
+    <dimen name="kx_section_imgwidth">24px</dimen>
+    <dimen name="kx_section_imgheight">90px</dimen>
+    <dimen name="kx_section_left_padding">30px</dimen>
+    <dimen name="kx_item_left_padding">30px</dimen>
+    <dimen name="kx_item_top_padding">37.5px</dimen>
+    <dimen name="kx_item_text_gap">37.5px</dimen>
+    <dimen name="kx_item_tags_left_padding">150px</dimen>
+    <dimen name="kx_item_tags_right_padding">30px</dimen>
+    <dimen name="kx_item_tags_height">132px</dimen>
+    <dimen name="kx_item_divline_gap">150px</dimen>
+    <dimen name="kx_item_tags_gap">30px</dimen>
+    <dimen name="kx_item_tags_read_width">294px</dimen>
+    <dimen name="kx_item_share_width">45px</dimen>
+    <dimen name="kx_item_tags_share_width">156px</dimen>
+    <dimen name="fast_section_line_width">369px</dimen>
+    <dimen name="fast_section_line_height">7.5px</dimen>
+    <dimen name="fast_section_ver_gap">30px</dimen>
+    <dimen name="fast_section_txt_layout_height">52.5px</dimen>
+    <dimen name="fast_item_time_layout_height">45px</dimen>
+    <dimen name="fast_item_time_tag_width">15px</dimen>
+    <dimen name="fast_item_time_tag_height">39px</dimen>
+    <dimen name="fast_item_share_layout_height">75px</dimen>
+
+    <!-- gp 股票指数相关布局 -->
+
+    <dimen name="news_hor_gap">30px</dimen>
+    <dimen name="news_viewpager_height">609px</dimen>
+    <dimen name="news_gppoint_height">264px</dimen>
+    <dimen name="news_gppoint_horpadding">75px</dimen>
+    <dimen name="news_gppoint_bottom_gap">24px</dimen>
+    <dimen name="news_gppoint_verpadding">30px</dimen>
+    <dimen name="news_item_height">276px</dimen>
+    <dimen name="news_item_image_height">204px</dimen>
+    <dimen name="news_item_image_double_height">408px</dimen>
+    <dimen name="news_item_image_width">306px</dimen>
+    <dimen name="news_item_padding">36px</dimen>
+    <dimen name="news_item_gap">45px</dimen>
+    <dimen name="news_item_lab_height">45px</dimen>
+    <dimen name="news_item_lab_width">72px</dimen>
+    <dimen name="news_item_first_lab_gap">36px</dimen>
+    <dimen name="news_item_lab_gap">9px</dimen>
+    <dimen name="news_item_video_width">45px</dimen>
+    <dimen name="news_item_comment_width">42px</dimen>
+    <dimen name="news_item_comment_height">33px</dimen>
+    <dimen name="news_item_comment_layout_height">36px</dimen>
+    <dimen name="news_item_comment_gap">18px</dimen>
+    <dimen name="news_item_tags_width">66px</dimen>
+    <dimen name="news_item_tags_height">37.5px</dimen>
+    <dimen name="news_item_threepic_layout_height">228px</dimen>
+    <dimen name="news_item_threepic_gap">6px</dimen>
+    <dimen name="news_item_adv_title_width">924px</dimen>
+
+    <!-- 视频页面相关的属性 -->
+    <dimen name="video_item_height">712.5px</dimen>
+    <dimen name="video_image_layout_height">537px</dimen>
+    <dimen name="video_paly_image_length">132px</dimen>
+    <dimen name="video_bottom_layout_height">138px</dimen>
+    <dimen name="video_btm_image_length">57px</dimen>
+    <dimen name="video_btm_mid_image_length">66px</dimen>
+    <dimen name="video_btm_mid_image_width">4.5px</dimen>
+    <dimen name="main_video_player_width">1020px</dimen>
+    <dimen name="main_video_player_height">537px</dimen>
+
+    <!-- 原创报纸页面属性 -->
+    <dimen name="main_paper_calender_height">384px</dimen>
+    <dimen name="main_paper_calender_width">1068px</dimen>
+    <dimen name="main_paper_calender_content_width">960px</dimen>
+    <dimen name="main_paper_calender_ver_gap">24px</dimen>
+    <dimen name="main_paper_calender_ver_open_gap">15px</dimen>
+    <dimen name="main_paper_calender_topmonth_width">424.5px</dimen>
+    <dimen name="main_paper_calender_topmonth_height">69px</dimen>
+    <dimen name="main_paper_calender_btmopen_heigth">36px</dimen>
+    <dimen name="main_paper_calender_btmopen_width">168px</dimen>
+    <dimen name="main_paper_calender_montn_change_icon_width">18px</dimen>
+    <dimen name="main_paper_calender_montn_change_icon_height">30px</dimen>
+    <dimen name="main_paper_calender_montn_icon_width">78px</dimen>
+    <dimen name="main_paper_title_layout_height">96px</dimen>
+    <dimen name="main_paper_title_point_length">16.5px</dimen>
+    <dimen name="main_paper_bottom_gap">39px</dimen>
+    <dimen name="calender_dialog_dataline_height">108px</dimen>
+    <dimen name="calender_dialog_height">924px</dimen>
+    <dimen name="main_paper_content_width">631.5px</dimen>
+    <dimen name="main_paper_content_height">1008px</dimen>
+    <dimen name="main_paper_paper_width">558px</dimen>
+    <dimen name="main_paper_paper_height">813px</dimen>
+
+    <!-- 活动专题节目相关属性 -->
+    <dimen name="main_feature_item_height">420px</dimen>
+    <dimen name="main_feature_img_layout_height">429px</dimen>
+    <dimen name="main_feature_img_layout_width">1068px</dimen>
+    <dimen name="main_feature_img_height">381px</dimen>
+    <dimen name="main_feature_img_width">1020px</dimen>
+    <dimen name="main_feature_img_ver_gap">24px</dimen>
+
+    <!-- 新闻详情页面特定布局参数 -->
+    <dimen name="news_detail_title_height">142.5px</dimen>
+    <dimen name="news_detail_bottom_height">150px</dimen>
+    <dimen name="news_detail_hor_padding">45px</dimen>
+    <dimen name="news_detail_backarrow_height">63px</dimen>
+    <dimen name="news_detail_backarrow_width">63px</dimen>
+    <dimen name="news_detail_more_width">15px</dimen>
+    <dimen name="news_detail_more_height">63px</dimen>
+    <dimen name="news_detail_title_line">4.5px</dimen>
+    <dimen name="news_detail_edittext_height">93px</dimen>
+    <dimen name="news_detail_share_width">57px</dimen>
+    <dimen name="news_detail_gap_25">37.5px</dimen>
+    <dimen name="news_detail_gap_22">33px</dimen>
+    <dimen name="news_detail_comment_height">72px</dimen>
+    <dimen name="news_detail_comment_icon_width">36px</dimen>
+    <dimen name="news_detail_comment_icon_height">42px</dimen>
+
+    <!-- 文字字体大小统一配置 -->
+    <dimen name="font_text_size_18">27px</dimen>
+    <dimen name="font_text_size_22">33px</dimen>
+    <dimen name="font_text_size_24">36px</dimen>
+    <dimen name="font_text_size_26">39px</dimen>
+    <dimen name="font_text_size_28">42px</dimen>
+    <dimen name="font_text_size_30">45px</dimen>
+    <dimen name="font_text_size_32">48px</dimen>
+    <dimen name="font_text_size_36">54px</dimen>
+    <dimen name="font_text_size_38">57px</dimen>
+    <dimen name="font_text_size_40">60px</dimen>
+
+    <!-- 个人中心相关属性值 -->
+    <dimen name="self_center_hor_padding">60px</dimen>
+    <dimen name="self_center_ver_padding">37.5px</dimen>
+    <dimen name="self_center_ver_padding_min">12px</dimen>
+    <dimen name="self_center_top_padding">52.5px</dimen>
+    <dimen name="self_center_headimg_top_padding">105px</dimen>
+    <dimen name="self_center_headimg_bottom_padding">30px</dimen>
+    <dimen name="self_center_top_four_height">195px</dimen>
+    <dimen name="self_center_item_height">138px</dimen>
+    <dimen name="feedbacks_content_height">552px</dimen>
+    <dimen name="self_center_item_hor_gap">45px</dimen>
+    <dimen name="self_center_back_btn_width">63px</dimen>
+    <dimen name="self_center_headimg_circle_width">240px</dimen>
+    <dimen name="self_center_headimg_width">216px</dimen>
+    <dimen name="self_center_top_four_item_heigth">57px</dimen>
+    <dimen name="self_center_top_four_width_54">81px</dimen>
+    <dimen name="self_center_top_four_width_40">60px</dimen>
+    <dimen name="self_center_item_tag_width">54px</dimen>
+    <dimen name="self_center_item_tag_height_28">42px</dimen>
+    <dimen name="self_center_item_mymsg_width">63px</dimen>
+    <dimen name="self_center_attr_switch_height">48px</dimen>
+    <dimen name="self_center_attr_switch_width">105px</dimen>
+    <dimen name="self_center_attr_switch_circle_width">75px</dimen>
+    <dimen name="self_center_switch_width">240px</dimen>
+    <dimen name="self_center_switch_height">75px</dimen>
+    <dimen name="self_center_switch_right_margin">24px</dimen>
+    <dimen name="self_setting_title_height">177px</dimen>
+    <dimen name="self_setting_top_margin">183px</dimen>
+    <dimen name="self_setting_head_layout_height">276px</dimen>
+    <dimen name="self_enter_arrow_width">24px</dimen>
+    <dimen name="self_enter_arrow_height">37.5px</dimen>
+    <dimen name="self_setting_right_margin">114px</dimen>
+    <dimen name="self_setting_exit_top_margin">75px</dimen>
+    <dimen name="self_setting_exit_width">1008px</dimen>
+    <dimen name="self_setting_exit_height">180px</dimen>
+
+    <!-- 登陆页面的属性 -->
+    <dimen name="login_user_tag_width">48px</dimen>
+    <dimen name="login_user_tag_left">90px</dimen>
+    <dimen name="login_password_tag_width">42px</dimen>
+    <dimen name="login_password_tag_left">93px</dimen>
+    <dimen name="login_password_tag_right">66px</dimen>
+    <dimen name="login_tag_height">54px</dimen>
+    <dimen name="login_ver_little_gap">37.5px</dimen>
+    <dimen name="login_button_width">1011px</dimen>
+    <dimen name="login_button_height">180px</dimen>
+    <dimen name="login_button_top_margin">93px</dimen>
+    <dimen name="login_button_top_register_password_gap">66px</dimen>
+    <dimen name="login_other_method_layout_height">279px</dimen>
+    <dimen name="login_other_method_layout_top_margin">120px</dimen>
+    <dimen name="login_other_method_title_top_margin">60px</dimen>
+    <dimen name="login_other_method_img_width">126px</dimen>
+    <dimen name="register_get_phone_num_width">258px</dimen>
+    <dimen name="register_get_phone_num_height">84px</dimen>
+    <dimen name="register_agree_tips_layout_height">114px</dimen>
+    <dimen name="register_agree_checkbox_width">54px</dimen>
+    <dimen name="register_agree_checkbox_gap">30px</dimen>
+    <dimen name="register_password_hint_checkbox_width">78px</dimen>
+
+    <!-- 消息中心相关的属性 -->
+    <dimen name="self_message_toggle_line_width">429px</dimen>
+    <dimen name="self_message_toggle_line_height">6px</dimen>
+    <dimen name="self_message_toggle_line_gap">9px</dimen>
+    <dimen name="self_message_item_top_height">84px</dimen>
+    <dimen name="self_message_item_top_gap">18px</dimen>
+    <dimen name="self_message_item_botom_gap">36px</dimen>
+    <dimen name="self_message_item_hor_gap">60px</dimen>
+
+    <!-- 专题详情页面布局数据 -->
+    <dimen name="feature_deatil_title_height">168px</dimen>
+    <dimen name="feature_deatil_title_share_width">57px</dimen>
+    <dimen name="feature_deatil_top_img_height">321px</dimen>
+    <dimen name="feature_deatil_ver_gap">15px</dimen>
+    <dimen name="feature_deatil_hor_padding">30px</dimen>
+    <dimen name="feature_deatil_ver_padding">37.5px</dimen>
+    <dimen name="feature_deatil_news_tag_width">210px</dimen>
+    <dimen name="feature_deatil_news_tags_top_height">165px</dimen>
+    <dimen name="feature_deatil_news_tags_btm_height">129px</dimen>
+    <dimen name="feature_deatil_tag_width">204px</dimen>
+    <dimen name="feature_deatil_tag_height">90px</dimen>
+    <dimen name="feature_deatil_tag_gap">60px</dimen>
+    <!--
+    <dimen name="feature_deatil_">60px</dimen>
+    <dimen name="feature_deatil_">60px</dimen>
+    -->
+
+
+    <!-- 图片新闻页面属性 -->
+    <dimen name="gallery_activity_top_gap">198px</dimen>
+    <dimen name="gallery_activity_bottom_gap">150px</dimen>
+    <dimen name="gallery_activity_image_height">1155px</dimen>
+    <dimen name="gallery_activity_text_top_gap">45px</dimen>
+    <dimen name="gallery_activity_text_hor_padding">15px</dimen>
+    <dimen name="gallery_activity_text_ver_gap">37.5px</dimen>
+    <dimen name="gallery_activity_content_top_height">120px</dimen>
+    <dimen name="gallery_activity_title_width">900px</dimen>
+
+    <!-- 文章详情页面更多选项弹出框效果 -->
+    <dimen name="article_dialog_cancle_height">144px</dimen>
+    <dimen name="alrlt_dialog_height">360px</dimen>
+    <dimen name="alrlt_dialog_width">750px</dimen>
+    <dimen name="article_dialog_top_layout_height">795px</dimen>
+    <dimen name="article_dialog_setting_text_top_layout_height">174px</dimen>
+    <dimen name="webview_dialog_top_layout_height">660px</dimen>
+    <dimen name="article_dialog_left_padding">60px</dimen>
+    <dimen name="article_dialog_left_padding_min">15px</dimen>
+    <dimen name="article_dialog_text_ver_gap">22.5px</dimen>
+    <dimen name="article_dialog_share_height">312px</dimen>
+    <dimen name="article_dialog_text_size_height">168px</dimen>
+    <dimen name="article_dialog_item_width">175.5px</dimen>
+    <dimen name="article_dialog_item_layout_width">265.5px</dimen>
+    <dimen name="article_dialog_item_A_widtn">36px</dimen>
+    <dimen name="article_dialog_item_A_height">33px</dimen>
+    <dimen name="article_dialog_item_textline_width">795px</dimen>
+    <dimen name="article_dialog_item_textline_height">48px</dimen>
+    <dimen name="article_dialog_item_textline_circle_big">31.5px</dimen>
+    <dimen name="article_dialog_item_textline_circle_small">10.5px</dimen>
+    <dimen name="collection_normal_news_item_height">255px</dimen>
+    <dimen name="reading_news_item_height">180px</dimen>
+    <dimen name="search_activity_search_layout_width">114px</dimen>
+    <dimen name="search_activity_search_icon_width">54px</dimen>
+    <dimen name="search_activity_ver_padding">75px</dimen>
+    <dimen name="search_activity_circle_width">450px</dimen>
+    <dimen name="search_activity_circle_height">90px</dimen>
+    <dimen name="dialog_item_height">174px</dimen>
+    <dimen name="dialog_item_layout_height">351px</dimen>
+    <dimen name="dialog_item_cancle_height">147px</dimen>
+
+    <!-- 评论页相关的属性 -->
+    <dimen name="comment_type_width">225px</dimen>
+    <dimen name="comment_type_height">66px</dimen>
+    <dimen name="comment_padding_30">45px</dimen>
+    <dimen name="comment_padding_25">37.5px</dimen>
+    <dimen name="comment_padding_20">30px</dimen>
+    <dimen name="comment_padding_15">22.5px</dimen>
+    <dimen name="comment_padding_10">15px</dimen>
+    <dimen name="comment_head_width">90px</dimen>
+    <dimen name="comment_good_width">45px</dimen>
+    <dimen name="comment_good_height">40.5px</dimen>
+    <dimen name="comment_value_width">60px</dimen>
+    <dimen name="comment_value_height">93px</dimen>
+    <dimen name="comment_more_width">90px</dimen>
+    <dimen name="comment_more_height">45px</dimen>
+    <dimen name="comment_handle_height">42px</dimen>
+    <dimen name="comment_handle_gap">105px</dimen>
+    <dimen name="comment_reply_width">48px</dimen>
+    <dimen name="comment_share_width">42px</dimen>
+    <dimen name="comment_alrt_width">36px</dimen>
+    <dimen name="comment_divline_width">990px</dimen>
+    <dimen name="comment_divline_height">4.5px</dimen>
+    <dimen name="comment_divline_width_smal">825px</dimen>
+    <dimen name="comment_child_left_padding">165px</dimen>
+    <dimen name="comment_child_top_angle_width">28.5px</dimen>
+    <dimen name="comment_child_top_angle_height">22.5px</dimen>
+    <dimen name="comment_child_top_angle_gap">18px</dimen>
+    <dimen name="comment_child_position_text_padding">9px</dimen>
+    <dimen name="comment_input_layout_height">510px</dimen>
+    <dimen name="comment_input_layout_bottom_height">810px</dimen>
+    <dimen name="comment_input_height">330px</dimen>
+    <dimen name="comment_input_send_height">67.5px</dimen>
+    <dimen name="comment_input_send_width">168px</dimen>
+    <dimen name="comment_top_gap">480px</dimen>
+    <dimen name="jb_default_width">333px</dimen>
+    <dimen name="jb_default_height">180px</dimen>
+    <dimen name="news_ad_width">1020px</dimen>
+
+    <!-- 新增的距离 -->
+    <dimen name="custom_news_title_ver_gap">24px</dimen>
+    <dimen name="custom_news_gap_40">60px</dimen>
+    <dimen name="news_item_book_tags_width">111px</dimen>
+    <dimen name="news_item_large_pic_height">534px</dimen>
+    <dimen name="news_item_large_pic_num_width">219px</dimen>
+    <dimen name="news_item_large_pic_num_height">90px</dimen>
+    <dimen name="font_text_size_20">30px</dimen>
+    <dimen name="gallery_activity_bottom_content_height">366px</dimen>
+    <dimen name="sign_center_head_height">555px</dimen>
+    <dimen name="fragment_bg_logo_width">300px</dimen>
+    <dimen name="fragment_bg_logo_height">492px</dimen>
+    
+    
+    <dimen name="pull_down_head_height">180px</dimen>
+    <dimen name="pull_down_head_gap">90px</dimen>
+    
+    
+
+</resources>

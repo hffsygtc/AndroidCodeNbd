@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:nbd="http://schemas.android.com/apk/res/cn.com.nbd.nbdmobile"
+    android:id="@+id/reading_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/newsSelfPageBg" >
+
+ <RelativeLayout
+        android:id="@+id/reading_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_setting_title_height"
+        android:background="@drawable/self_setting_title_bg" >
+
+        <ImageView
+            android:id="@+id/reading_back_btn"
+            android:layout_width="@dimen/self_center_back_btn_width"
+            android:layout_height="@dimen/self_center_back_btn_width"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:layout_marginTop="@dimen/self_center_top_padding"
+            android:background="@drawable/self_setting_back_btn" />
+
+        <TextView
+            android:id="@+id/reading_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:layout_toRightOf="@+id/reading_back_btn"
+            android:text="我的阅读"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_text_size_36" />
+    </RelativeLayout>
+    <!-- 头部时间选择界面部分 -->
+
+    <LinearLayout
+        android:id="@+id/reading_time_layout"
+        android:layout_width="@dimen/main_paper_calender_width"
+        android:layout_height="@dimen/main_paper_calender_height"
+        android:layout_below="@+id/reading_title_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/custom_page_ver_padding_plus_title_cover"
+        android:background="@drawable/calender_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/main_paper_calender_topmonth_width"
+            android:layout_height="@dimen/main_paper_calender_topmonth_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/main_paper_calender_ver_gap"
+            android:background="@drawable/canlender_month" >
+
+            <TextView
+                android:id="@+id/reading_now_month_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2016-05"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <RelativeLayout
+                android:id="@+id/reading_month_per_layout"
+                android:layout_width="@dimen/main_paper_calender_montn_icon_width"
+                android:layout_height="@dimen/main_paper_calender_topmonth_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/reading_month_per_btn"
+                    android:layout_width="@dimen/main_paper_calender_montn_change_icon_width"
+                    android:layout_height="@dimen/main_paper_calender_montn_change_icon_height"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/canlender_month_per" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reading_month_next_layout"
+                android:layout_width="@dimen/main_paper_calender_montn_icon_width"
+                android:layout_height="@dimen/main_paper_calender_topmonth_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/reading_month_next_btn"
+                    android:layout_width="@dimen/main_paper_calender_montn_change_icon_width"
+                    android:layout_height="@dimen/main_paper_calender_montn_change_icon_height"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/canlender_month_next" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <cn.com.nbd.nbdmobile.view.CalenderLineView
+            android:id="@+id/reading_calender_title"
+            android:layout_width="@dimen/main_paper_calender_content_width"
+            android:layout_height="@dimen/calender_dialog_dataline_height"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+        </cn.com.nbd.nbdmobile.view.CalenderLineView>
+
+        <cn.com.nbd.nbdmobile.view.CalenderLineView
+            android:id="@+id/reading_calender_data_line"
+            android:layout_width="@dimen/main_paper_calender_content_width"
+            android:layout_height="@dimen/calender_dialog_dataline_height"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+        </cn.com.nbd.nbdmobile.view.CalenderLineView>
+
+        <ImageView
+            android:id="@+id/reading_btm_open_btn"
+            android:layout_width="@dimen/main_paper_calender_btmopen_width"
+            android:layout_height="@dimen/main_paper_calender_btmopen_heigth"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/main_paper_calender_ver_open_gap"
+            android:background="@drawable/canlender_btm_open_btn" />
+    </LinearLayout>
+
+    <!-- 新闻主题的内容容器 -->
+
+    <cn.com.nbd.nbdmobile.view.WithoutSectionCustomListViewUnused
+        android:id="@+id/reading_mListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/reading_time_layout"
+        android:layout_marginTop="@dimen/custom_page_ver_padding_plus_cover"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+    
+    <TextView 
+        android:id="@+id/reading_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/newsCover"/>
+
+</RelativeLayout>

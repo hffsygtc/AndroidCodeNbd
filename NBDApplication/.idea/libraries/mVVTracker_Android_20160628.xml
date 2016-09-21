@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mVVTracker_Android_20160628">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LePlayerSdk/libs/mVVTracker_Android_20160628.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

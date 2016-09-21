@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical">
+
+    <!-- 内容 -->
+
+    <RelativeLayout
+        android:id="@+id/head_contentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/pull_down_head_height"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/head_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:src="@drawable/pull_load_n" />
+
+        <ImageView
+            android:id="@+id/head_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/pull_down_head_height"
+            android:scaleType="matrix"
+            android:src="@drawable/pull_load_plus" />
+
+        <TextView
+            android:id="@+id/head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/head_plus"
+            android:layout_marginTop="@dimen/pull_down_head_gap"
+            android:textColor="@color/custom_pull_down"
+            android:textSize="@dimen/font_text_size_26" />
+
+    </RelativeLayout>
+
+</LinearLayout>

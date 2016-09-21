@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/threepic_article_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/custom_page_ver_padding"
+    android:paddingLeft="@dimen/custom_page_hor_padding"
+    android:paddingRight="@dimen/custom_page_hor_padding"
+    android:paddingTop="@dimen/custom_page_ver_padding" >
+
+    <TextView
+        android:id="@+id/threepic_article_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:maxLines="1"
+        android:text="@string/news_item_default_title"
+        android:textColor="?attr/newsTextBlack"
+        android:textSize="@dimen/font_text_size_32" />
+
+    <LinearLayout
+        android:id="@+id/threepic_img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_item_threepic_layout_height"
+        android:layout_below="@+id/threepic_article_title"
+        android:layout_marginTop="@dimen/custom_news_title_ver_gap"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/threepic_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="@dimen/news_item_threepic_gap"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/threepic_middle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="@dimen/news_item_threepic_gap"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/threepic_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_item_tags_height"
+        android:layout_below="@id/threepic_img_layout"
+        android:layout_marginTop="@dimen/custom_news_title_ver_gap"
+        >
+    <TextView
+        android:id="@+id/threepic_article_commonnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="1234 评论"
+        android:textColor="@color/custom_grey"
+        android:textSize="@dimen/font_text_size_24" />
+
+   <ImageView
+        android:id="@+id/threepic_article_tag_img"
+        android:layout_width="@dimen/news_item_tags_width"
+        android:layout_height="@dimen/news_item_tags_height"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/article_tag_picture" 
+        android:visibility="gone"/>
+   
+    <TextView
+        android:id="@+id/threepic_article_ori_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/threepic_article_tag_img"
+        android:text="视觉中国"
+        android:textColor="@color/custom_grey"
+        android:textSize="@dimen/font_text_size_24" />
+    </RelativeLayout>
+
+</RelativeLayout>

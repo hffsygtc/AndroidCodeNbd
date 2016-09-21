@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feature_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/newsSelfPageBg"
+    android:orientation="vertical" >
+
+    <!-- 导语布局 -->
+
+    <RelativeLayout
+        android:id="@+id/feature_item_tips_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/feature_item_tips_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feature_deatil_top_img_height"
+            android:background="?attr/newsSelfItemBg"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/feature_item_lead_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feature_item_tips_img"
+            android:layout_marginTop="@dimen/feature_deatil_ver_gap"
+            android:background="?attr/newsSelfItemBg"
+            android:paddingBottom="@dimen/feature_deatil_ver_padding"
+            android:paddingLeft="@dimen/feature_deatil_hor_padding"
+            android:paddingRight="@dimen/feature_deatil_hor_padding"
+            android:paddingTop="@dimen/feature_deatil_ver_padding" >
+
+            <TextView
+                android:id="@+id/feature_item_tips_redtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导语:"
+                android:textColor="@color/activity_login_forget_red"
+                android:textSize="@dimen/font_text_size_24" />
+
+            <TextView
+                android:id="@+id/feature_item_tips_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="		 	打的快睡觉了大量可能"
+                android:textColor="?attr/newsTextBlack"
+                android:textSize="@dimen/font_text_size_24" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 标签布局，定位的标签 -->
+
+    <RelativeLayout
+        android:id="@+id/feature_detail_tags_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/feature_tags_top_div"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/feature_deatil_ver_gap" />
+
+        <RelativeLayout
+            android:id="@+id/feature_tags_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feature_tags_top_div"
+            android:background="?attr/newsSelfItemBg" >
+
+            <RelativeLayout
+                android:id="@+id/feature_tags_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feature_deatil_news_tags_top_height"
+                android:layout_alignParentTop="true" >
+
+                <TextView
+                    android:id="@+id/feature_tag_one"
+                    android:layout_width="@dimen/feature_deatil_tag_width"
+                    android:layout_height="@dimen/feature_deatil_tag_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/feature_deatil_hor_padding"
+                    android:background="?attr/newsFeatureTagBg"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="标签"
+                    android:textColor="@color/activity_login_forget_red"
+                    android:textSize="@dimen/font_text_size_30" />
+
+                <TextView
+                    android:id="@+id/feature_tag_two"
+                    android:layout_width="@dimen/feature_deatil_tag_width"
+                    android:layout_height="@dimen/feature_deatil_tag_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/feature_deatil_tag_gap"
+                    android:layout_toRightOf="@+id/feature_tag_one"
+                    android:background="?attr/newsFeatureTagBg"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="标签"
+                    android:textColor="@color/activity_login_forget_red"
+                    android:textSize="@dimen/font_text_size_30" />
+
+                <TextView
+                    android:id="@+id/feature_tag_three"
+                    android:layout_width="@dimen/feature_deatil_tag_width"
+                    android:layout_height="@dimen/feature_deatil_tag_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/feature_deatil_tag_gap"
+                    android:layout_toRightOf="@+id/feature_tag_two"
+                    android:background="?attr/newsFeatureTagBg"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="标签"
+                    android:textColor="@color/activity_login_forget_red"
+                    android:textSize="@dimen/font_text_size_30" />
+
+                <TextView
+                    android:id="@+id/feature_tag_four"
+                    android:layout_width="@dimen/feature_deatil_tag_width"
+                    android:layout_height="@dimen/feature_deatil_tag_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/feature_deatil_tag_gap"
+                    android:layout_toRightOf="@+id/feature_tag_three"
+                    android:background="?attr/newsFeatureTagBg"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="标签"
+                    android:textColor="@color/activity_login_forget_red"
+                    android:textSize="@dimen/font_text_size_30" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/feature_tags_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feature_deatil_news_tags_btm_height"
+                android:layout_below="@+id/feature_tags_top_layout" >
+
+                <TextView
+                    android:id="@+id/feature_tag_btm_one"
+                    android:layout_width="@dimen/feature_deatil_tag_width"
+                    android:layout_height="@dimen/feature_deatil_tag_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/feature_deatil_hor_padding"
+                    android:background="?attr/newsFeatureTagBg"
+                    android:gravity="center"
+                    android:text="标签"
+                    android:textColor="@color/activity_login_forget_red"
+                    android:textSize="@dimen/font_text_size_30" />
+
+                <TextView
+                    android:id="@+id/feature_tag_btm_two"
+                    android:layout_width="@dimen/feature_deatil_tag_width"
+                    android:layout_height="@dimen/feature_deatil_tag_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/feature_deatil_tag_gap"
+                    android:layout_toRightOf="@+id/feature_tag_btm_one"
+                    android:background="?attr/newsFeatureTagBg"
+                    android:gravity="center"
+                    android:text="标签"
+                    android:textColor="@color/activity_login_forget_red"
+                    android:textSize="@dimen/font_text_size_30" />
+
+                <TextView
+                    android:id="@+id/feature_tag_btm_three"
+                    android:layout_width="@dimen/feature_deatil_tag_width"
+                    android:layout_height="@dimen/feature_deatil_tag_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/feature_deatil_tag_gap"
+                    android:layout_toRightOf="@+id/feature_tag_btm_two"
+                    android:background="?attr/newsFeatureTagBg"
+                    android:gravity="center"
+                    android:text="标签"
+                    android:textColor="@color/activity_login_forget_red"
+                    android:textSize="@dimen/font_text_size_30" />
+
+                <TextView
+                    android:id="@+id/feature_tag_btm_four"
+                    android:layout_width="@dimen/feature_deatil_tag_width"
+                    android:layout_height="@dimen/feature_deatil_tag_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/feature_deatil_tag_gap"
+                    android:layout_toRightOf="@+id/feature_tag_btm_three"
+                    android:background="?attr/newsFeatureTagBg"
+                    android:gravity="center"
+                    android:text="标签"
+                    android:textColor="@color/activity_login_forget_red"
+                    android:textSize="@dimen/font_text_size_30" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 标准新闻布局，图片配文字 -->
+
+    <RelativeLayout
+        android:id="@+id/feature_detail_news_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/newsSelfItemBg" >
+
+        <RelativeLayout
+            android:id="@+id/feature_detail_news_tag_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/feature_tags_btm_div"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feature_deatil_ver_gap"
+                android:layout_alignParentTop="true"
+                android:background="?attr/newsSelfPageBg" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/main_paper_calender_topmonth_width"
+                android:layout_height="@dimen/main_paper_calender_topmonth_height"
+                android:layout_below="@+id/feature_tags_btm_div"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/canlender_month" >
+
+                <TextView
+                    android:id="@+id/feature_detail_news_tag_txt"
+                    android:layout_width="@dimen/feature_deatil_news_tag_width"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxEms="4"
+                    android:singleLine="true"
+                    android:text="这是个标签"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_text_size_30" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feature_detail_article_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feature_detail_news_tag_layout"
+            android:paddingBottom="@dimen/news_item_padding"
+            android:paddingLeft="@dimen/news_hor_gap"
+            android:paddingRight="@dimen/news_hor_gap"
+            android:paddingTop="@dimen/news_item_padding" >
+
+            <ImageView
+                android:id="@+id/feature_detail_article_img"
+                android:layout_width="@dimen/news_item_image_width"
+                android:layout_height="@dimen/news_item_image_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/feature_detail_article_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/news_hor_gap"
+                android:layout_toRightOf="@+id/feature_detail_article_img"
+                android:maxLines="2"
+                android:text="全球货币掀贬值潮 上海有外企人员奖金改发美元"
+                android:textColor="?attr/newsTextBlack"
+                android:textSize="@dimen/font_text_size_32" />
+
+            <ImageView
+                android:id="@+id/feature_detail_article_tag_img"
+                android:layout_width="@dimen/news_item_tags_width"
+                android:layout_height="@dimen/news_item_tags_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/news_hor_gap"
+                android:layout_toRightOf="@+id/feature_detail_article_img" />
+
+            <TextView
+                android:id="@+id/feature_detail_article_commonnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="1234 评论"
+                android:textColor="@color/custom_grey"
+                android:textSize="@dimen/font_text_size_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feature_detail_big_img_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feature_detail_article_layout"
+            android:paddingBottom="@dimen/news_item_padding"
+            android:paddingLeft="@dimen/news_hor_gap"
+            android:paddingRight="@dimen/news_hor_gap"
+            android:paddingTop="@dimen/news_item_padding"
+            android:visibility="gone">
+            
+                <LinearLayout
+                    android:id="@+id/feature_detail_book_title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/feature_detail_book_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textColor="?attr/newsTextBlack"
+                        android:textSize="@dimen/font_text_size_32" />
+
+                    <TextView
+                        android:layout_width="@dimen/news_hor_gap"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/feature_detail_book_title_tag"
+                        android:layout_width="@dimen/news_item_book_tags_width"
+                        android:layout_height="@dimen/news_item_tags_height"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/article_tag_book" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/feature_detail_book_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/news_item_image_double_height"
+                    android:layout_below="@+id/feature_detail_book_title_layout"
+                    android:layout_marginTop="@dimen/news_item_threepic_gap"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+            
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_below="@+id/feature_detail_big_img_layout"
+            android:layout_marginLeft="@dimen/news_hor_gap"
+            android:layout_marginRight="@dimen/news_hor_gap"
+            android:background="@color/custom_divline" />
+    </RelativeLayout>
+
+</LinearLayout>

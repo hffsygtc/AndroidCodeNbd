@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+    <!-- 连框颜色值 -->
+    <item>
+        <shape>
+            <solid android:color="@color/comment_line" />
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item
+        android:left="@dimen/custom_divline_width"
+        android:right="@dimen/custom_divline_width">
+<!--     <item
+        android:left="@dimen/custom_divline_width"
+        android:right="@dimen/custom_divline_width"> -->
+        <shape>
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>

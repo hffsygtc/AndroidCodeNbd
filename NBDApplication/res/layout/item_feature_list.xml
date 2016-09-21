@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feature_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/video_item_background" >
+
+    <RelativeLayout
+        android:id="@+id/feature_item_img_layout"
+        android:layout_width="@dimen/main_feature_img_layout_width"
+        android:layout_height="@dimen/main_feature_img_layout_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/feature_bg" >
+
+        <ImageView
+            android:id="@+id/feature_item_img"
+            android:layout_width="@dimen/main_feature_img_width"
+            android:layout_height="@dimen/main_feature_img_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/main_feature_img_ver_gap"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/feature_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/feature_item_img_layout"
+        android:layout_marginLeft="@dimen/custom_page_hor_padding"
+        android:layout_marginRight="@dimen/custom_page_hor_padding"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="@dimen/font_text_size_24"
+        android:textColor="?attr/newsTextBlack" />
+
+    <TextView
+        android:id="@+id/feature_item_divline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_divline_width"
+        android:layout_below="@+id/feature_item_content"
+        android:layout_marginTop="@dimen/custom_page_ver_padding"
+        android:layout_marginLeft="@dimen/custom_page_hor_padding"
+        android:layout_marginRight="@dimen/custom_page_hor_padding"
+        android:textSize="@dimen/font_text_size_24"
+        android:background="@color/custom_divline" />
+
+</RelativeLayout>

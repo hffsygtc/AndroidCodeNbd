@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LePlayerSdk/LePlayerSdk.iml" filepath="$PROJECT_DIR$/LePlayerSdk/LePlayerSdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LePlayerSkin/LePlayerSkin.iml" filepath="$PROJECT_DIR$/LePlayerSkin/LePlayerSkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NBDApplication.iml" filepath="$PROJECT_DIR$/NBDApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NBDArticle/NBDArticle.iml" filepath="$PROJECT_DIR$/NBDArticle/NBDArticle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NBDNetworkPrivoder/NBDNetworkPrivoder.iml" filepath="$PROJECT_DIR$/NBDNetworkPrivoder/NBDNetworkPrivoder.iml" />
+    </modules>
+  </component>
+</project>

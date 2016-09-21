@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/newsSelfPageBg" >
+
+    <RelativeLayout
+        android:id="@+id/nickname_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_setting_title_height"
+        android:background="@drawable/self_setting_title_bg" >
+
+        <ImageView
+            android:id="@+id/nickname_back_btn"
+            android:layout_width="@dimen/self_center_back_btn_width"
+            android:layout_height="@dimen/self_center_back_btn_width"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:layout_marginTop="@dimen/self_center_top_padding"
+            android:background="@drawable/self_setting_back_btn" />
+
+        <TextView
+            android:id="@+id/nickname_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:layout_toRightOf="@+id/nickname_back_btn"
+            android:text=" 修改昵称"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_text_size_36" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nickname_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_center_item_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/self_setting_top_margin"
+        android:background="?attr/newsSelfItemBg" >
+
+        <EditText
+            android:id="@+id/nickname_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:background="@null"
+            android:singleLine="true"
+            android:hint="请输入昵称"
+            android:textColor="?attr/newsTextBlack"
+            android:textColorHint="@color/activity_main_self_setting_hint_text"
+            android:textSize="@dimen/font_text_size_30" />
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/nickname_button"
+        android:layout_width="@dimen/login_button_width"
+        android:layout_height="@dimen/login_button_height"
+        android:layout_below="@+id/nickname_input_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_button_top_register_password_gap"
+        android:background="@drawable/login_button_normal"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/video_share_txt"
+        android:textSize="@dimen/font_text_size_30" />
+
+<!--     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/newsCover" /> -->
+
+</RelativeLayout>

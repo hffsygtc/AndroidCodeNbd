@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_article_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/custom_page_ver_padding"
+    android:paddingLeft="@dimen/custom_page_hor_padding"
+    android:paddingRight="@dimen/custom_page_hor_padding"
+    android:paddingTop="@dimen/custom_page_ver_padding" >
+
+      <TextView
+        android:id="@+id/video_article_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true" />
+      
+    <TextView
+        android:id="@+id/video_article_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/news_item_default_title"
+        android:textColor="?attr/newsTextBlack"
+        android:layout_below="@+id/video_article_top_line"
+        android:textSize="@dimen/font_text_size_32" />
+    
+     <RelativeLayout
+        android:id="@+id/video_article_adv_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_news_gap_40"
+        android:layout_below="@+id/video_article_title" >
+
+        <ImageView
+            android:id="@+id/video_article_adv_tag"
+            android:layout_width="@dimen/news_item_tags_width"
+            android:layout_height="@dimen/news_item_tags_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/article_tag_broad" />
+
+        <TextView
+            android:id="@+id/video_article_adv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/custom_page_hor_padding"
+            android:layout_toLeftOf="@+id/video_article_adv_tag"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/news_item_default_title"
+            android:textColor="?attr/newsTextBlack"
+            android:textSize="@dimen/font_text_size_32" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_item_large_pic_height"
+        android:layout_below="@+id/video_article_adv_title_layout"
+        android:layout_marginTop="@dimen/custom_news_title_ver_gap"
+        android:background="@color/custom_grey_white" >
+
+        <ImageView
+            android:id="@+id/video_article_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/video_article_image_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/video_item_cover" />
+
+        <ImageView
+            android:id="@+id/video_article_play_img"
+            android:layout_width="@dimen/video_paly_image_length"
+            android:layout_height="@dimen/video_paly_image_length"
+            android:layout_centerInParent="true"
+            android:background="@drawable/video_play_btn" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/video_play_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_item_large_pic_height"
+        android:layout_below="@+id/video_article_adv_title_layout"
+        android:layout_marginTop="@dimen/custom_news_title_ver_gap" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_article_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_item_tags_height"
+        android:layout_below="@+id/video_image_layout"
+        android:layout_marginTop="@dimen/custom_news_title_ver_gap" >
+
+        <ImageView
+            android:id="@+id/video_article_share_icon"
+            android:layout_width="@dimen/news_item_tags_height"
+            android:layout_height="@dimen/news_item_tags_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/video_article_btm_share" />
+
+        <ImageView
+            android:id="@+id/video_article_tag_img"
+            android:layout_width="@dimen/news_item_tags_width"
+            android:layout_height="@dimen/news_item_tags_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/article_tag_video" />
+
+        <TextView
+            android:id="@+id/video_article_ori_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:layout_toRightOf="@+id/video_article_tag_img"
+            android:text="视觉中国"
+            android:textColor="@color/custom_grey"
+            android:textSize="@dimen/font_text_size_24" />
+
+        <ImageView
+            android:id="@+id/video_article_video_icon"
+            android:layout_width="@dimen/news_item_tags_height"
+            android:layout_height="@dimen/news_item_tags_height"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:layout_toRightOf="@+id/video_article_ori_text"
+            android:background="@drawable/video_article_btm_icon" />
+
+        <TextView
+            android:id="@+id/video_article_playnum_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:layout_toRightOf="@+id/video_article_video_icon"
+            android:text="1234"
+            android:textColor="@color/custom_grey"
+            android:textSize="@dimen/font_text_size_24" />
+    </RelativeLayout>
+
+</RelativeLayout>

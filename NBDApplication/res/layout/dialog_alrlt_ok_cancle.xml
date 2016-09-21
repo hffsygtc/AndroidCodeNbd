@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alrlt_dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/alrlt_dialog_content_layout"
+        android:layout_width="@dimen/alrlt_dialog_width"
+        android:layout_height="@dimen/alrlt_dialog_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:id="@+id/alrlt_dialog_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/article_dialog_cancle_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/article_dialog_cancle_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/alrlt_dialog_bottom_cancle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <ImageView
+                android:layout_width="@dimen/video_btm_mid_image_width"
+                android:layout_height="@dimen/video_btm_mid_image_length"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/video_item_mid_div" />
+
+            <TextView
+                android:id="@+id/alrlt_dialog_bottom_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_text_size_30" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/alrlt_dialog_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/alrlt_dialog_bottom_layout"
+            android:background="@color/article_dialog_content_bg" >
+
+            <TextView
+                android:id="@+id/alrlt_dialog_top_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/article_more_dialog_chooes_layout"
+                android:layout_centerInParent="true"
+                android:text="确定要删除所有缓存吗？"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_text_size_30" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/alrlt_dialog_top_gap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/alrlt_dialog_content_layout" />
+
+    <TextView
+        android:id="@+id/alrlt_dialog_bottom_gap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/alrlt_dialog_content_layout" />
+
+</RelativeLayout>

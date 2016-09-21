@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="lecloudutils">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LePlayerSdk/libs/lecloudutils.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

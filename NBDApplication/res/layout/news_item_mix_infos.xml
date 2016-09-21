@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <include layout="@layout/news_item_top_head_image" />
+    <!-- 咨询频道各证券股票信息布局 -->
+
+    <include layout="@layout/news_stocks_layout" />
+
+    <!-- 左右切换选择器布局 -->
+
+    <include layout="@layout/switch_item_section" />
+
+    <RelativeLayout
+        android:id="@+id/news_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 新闻内容的布局 -->
+
+        <LinearLayout
+            android:id="@+id/article_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 标准新闻布局，图片配文字 -->
+
+            <include layout="@layout/news_item_normal_news" />
+
+            <!-- 三张图片的新闻布局 -->
+
+            <include layout="@layout/news_item_three_images" />
+
+            <!-- 推广广告的布局 -->
+
+            <include layout="@layout/news_item_large_picture" />
+            
+            <!-- 视频类型的布局 -->
+
+            <include layout="@layout/news_item_video_news" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/custom_divline_width"
+                android:layout_marginLeft="@dimen/news_hor_gap"
+                android:layout_marginRight="@dimen/news_hor_gap"
+                android:background="@color/custom_divline" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

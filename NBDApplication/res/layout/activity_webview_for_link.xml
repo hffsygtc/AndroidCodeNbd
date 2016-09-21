@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nbd="http://schemas.android.com/apk/res/cn.com.nbd.nbdmobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/newsSelfPageBg" >
+
+    <RelativeLayout
+        android:id="@+id/news_detail_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_detail_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/custom_white"
+        android:paddingLeft="@dimen/news_detail_hor_padding"
+        android:paddingRight="@dimen/news_detail_hor_padding" >
+
+        <ImageView
+            android:id="@+id/news_detail_back_arrow"
+            android:layout_width="@dimen/news_detail_backarrow_width"
+            android:layout_height="@dimen/news_detail_backarrow_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow" />
+
+        <RelativeLayout
+            android:id="@+id/news_detail_more_layout"
+            android:layout_width="@dimen/news_detail_backarrow_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/news_detail_more_btn"
+                android:layout_width="@dimen/news_detail_more_width"
+                android:layout_height="@dimen/news_detail_more_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/more_three_point" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/news_detail_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/news_detail_backarrow_width"
+            android:layout_marginRight="@dimen/news_detail_backarrow_width"
+            android:layout_toLeftOf="@+id/news_detail_more_layout"
+            android:layout_toRightOf="@+id/news_detail_back_arrow"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/font_text_size_36" />
+    </RelativeLayout>
+
+    <cn.com.nbd.nbdmobile.webview.NBDWebView
+        android:id="@+id/news_detail_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/news_detail_bottom_layout"
+        android:layout_below="@+id/news_detail_title_layout"
+        android:scrollbars="none" >
+    </cn.com.nbd.nbdmobile.webview.NBDWebView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_divline_width"
+        android:layout_below="@+id/news_detail_title_layout"
+        android:background="@color/news_detail_bottom_line" />
+    
+<!--   <cn.com.nbd.nbdmobile.view.NbdProgressBar 
+      android:id="@+id/news_detail_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/news_detail_title_layout"
+        nbd:progress_reach_height="5dp"
+        nbd:progress_unreach_height="3dp"
+        nbd:progress_unreach_color="#7fcf2118"
+        nbd:progress_reach_color ="#ffcf2118"
+        nbd:progress_text_color ="@color/black"
+        nbd:progress_text_offset = "10dp"
+        android:background="@color/custom_grey_white"
+        />  --> 
+
+</RelativeLayout>

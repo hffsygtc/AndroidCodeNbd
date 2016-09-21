@@ -1,0 +1,235 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/webview_more_dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/webview_more_dialog_canle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/article_dialog_cancle_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/article_dialog_cancle_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_text_size_30" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/webview_more_dialog_chooes_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/webview_dialog_top_layout_height"
+        android:layout_above="@+id/webview_more_dialog_canle_layout"
+        android:background="@color/article_dialog_content_bg" >
+
+        <!-- 分享的布局 -->
+
+        <RelativeLayout
+            android:id="@+id/webview_more_share_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/article_dialog_share_height"
+            android:layout_alignParentTop="true" >
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/webview_more_share_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/webview_more_weixin_layout"
+                        android:layout_width="@dimen/article_dialog_item_layout_width"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/article_dialog_left_padding_min" >
+
+                        <ImageView
+                            android:id="@+id/webview_more_weixin_img"
+                            android:layout_width="@dimen/article_dialog_item_width"
+                            android:layout_height="@dimen/article_dialog_item_width"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/custom_page_ver_padding"
+                            android:background="@drawable/ssdk_oks_classic_wechat" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/custom_page_ver_padding"
+                            android:text="微信好友"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_text_size_18" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/webview_more_pengyouquan_layout"
+                        android:layout_width="@dimen/article_dialog_item_layout_width"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/webview_more_pengyouquan_img"
+                            android:layout_width="@dimen/article_dialog_item_width"
+                            android:layout_height="@dimen/article_dialog_item_width"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/custom_page_ver_padding"
+                            android:background="@drawable/ssdk_oks_classic_wechatmoments" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/custom_page_ver_padding"
+                            android:text="微信朋友圈"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_text_size_18" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/webview_more_weibo_layout"
+                        android:layout_width="@dimen/article_dialog_item_layout_width"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/webview_more_weibo_img"
+                            android:layout_width="@dimen/article_dialog_item_width"
+                            android:layout_height="@dimen/article_dialog_item_width"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/custom_page_ver_padding"
+                            android:background="@drawable/ssdk_oks_classic_sinaweibo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/custom_page_ver_padding"
+                            android:text="新浪微博"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_text_size_18" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/webview_more_qq_layout"
+                        android:layout_width="@dimen/article_dialog_item_layout_width"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/webview_more_qq_img"
+                            android:layout_width="@dimen/article_dialog_item_width"
+                            android:layout_height="@dimen/article_dialog_item_width"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/custom_page_ver_padding"
+                            android:background="@drawable/ssdk_oks_classic_qq" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/custom_page_ver_padding"
+                            android:text="QQ好友"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_text_size_18" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/webview_more_qqzone_layout"
+                        android:layout_width="@dimen/article_dialog_item_layout_width"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/webview_more_qqzone_img"
+                            android:layout_width="@dimen/article_dialog_item_width"
+                            android:layout_height="@dimen/article_dialog_item_width"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/custom_page_ver_padding"
+                            android:background="@drawable/ssdk_oks_classic_qzone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/custom_page_ver_padding"
+                            android:text="QQ空间"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_text_size_18" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/webview_dialog_first_gap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_below="@+id/webview_more_share_layout"
+            android:background="@color/color_gray_eaeaea" />
+
+        <RelativeLayout
+            android:id="@+id/webview_more_native_open"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_item_height"
+            android:layout_below="@+id/webview_dialog_first_gap"
+            android:layout_centerHorizontal="true"
+            android:background="@color/article_dialog_content_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="在本地浏览器打开"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_text_size_30" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/webview_dialog_second_gap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_below="@+id/webview_more_native_open"
+            android:background="@color/color_gray_eaeaea" />
+
+        <RelativeLayout
+            android:id="@+id/webview_more_refresh_open"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_item_height"
+            android:layout_below="@+id/webview_dialog_second_gap"
+            android:layout_centerHorizontal="true"
+            android:background="@color/article_dialog_content_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="刷新"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_text_size_30" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/webview_dialog_top_space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/webview_more_dialog_chooes_layout" />
+
+    </RelativeLayout>

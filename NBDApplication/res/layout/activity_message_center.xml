@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/newsSelfPageBg" >
+
+    <RelativeLayout
+        android:id="@+id/self_msg_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_setting_title_height"
+        android:background="@color/activity_login_forget_red" >
+
+        <ImageView
+            android:id="@+id/self_msg_back_btn"
+            android:layout_width="@dimen/self_center_back_btn_width"
+            android:layout_height="@dimen/self_center_back_btn_width"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:layout_marginTop="@dimen/self_center_top_padding"
+            android:background="@drawable/self_setting_back_btn" />
+
+        <TextView
+            android:id="@+id/self_msg_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:layout_toRightOf="@+id/self_msg_back_btn"
+            android:text="我的消息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_text_size_36" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/self_msg_toggle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_setting_title_height"
+        android:layout_below="@+id/self_msg_title_layout"
+        android:background="@drawable/self_setting_title_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/self_msg_left_toggle_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/self_msg_left_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="与我相关"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <TextView
+                android:id="@+id/self_msg_left_bottom_line"
+                android:layout_width="@dimen/self_message_toggle_line_width"
+                android:layout_height="@dimen/self_message_toggle_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/self_message_toggle_line_gap"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/self_msg_right_toggle_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/self_msg_right_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的通知"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_text_size_30" />
+
+            <TextView
+                android:id="@+id/self_msg_right_bottom_line"
+                android:layout_width="@dimen/self_message_toggle_line_width"
+                android:layout_height="@dimen/self_message_toggle_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/self_message_toggle_line_gap"
+                android:background="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/self_msg_default_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/self_msg_toggle_layout" />
+
+    <cn.com.nbd.nbdmobile.view.WithoutSectionCustomListViewUnused
+        android:id="@+id/self_msg_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/self_msg_toggle_layout"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+    </cn.com.nbd.nbdmobile.view.WithoutSectionCustomListViewUnused>
+
+    <TextView
+        android:id="@+id/message_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/newsCover" />
+
+</RelativeLayout>

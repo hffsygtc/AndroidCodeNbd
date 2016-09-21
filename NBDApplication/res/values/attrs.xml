@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页上方左右滑动标题栏个数属性 -->
+    <attr name="visible_tab_count" format="integer" />
+
+    <declare-styleable name="ViewPagerTab">
+        <attr name="visible_tab_count" />
+    </declare-styleable>
+
+    <!-- 设置首页底部菜单按钮图片属性 -->
+    <declare-styleable name="MyRadioButton">
+        <attr name="drawableHeightSize" format="dimension" />
+        <attr name="drawableWidthSize" format="dimension" />
+        <attr name="drawableTop" format="reference" />
+        <attr name="drawableLeft" format="reference" />
+        <attr name="drawableRight" format="reference" />
+        <attr name="drawableBottom" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <!-- 夜间模式切换，黑色(灰色)，背景颜色两个变动 -->
+    <attr name="newsBackground" format="color" />
+    <attr name="newsTextBlack" format="color" />
+    <attr name="newsSectionBg" format="color" />
+    <attr name="newsSelfPageBg" format="color" />
+    <attr name="newsSelfItemBg" format="color" />
+    <attr name="newsCover" format="color" />
+    <attr name="newsItemClickBg" format="reference" />
+    <attr name="newsFeatureTagBg" format="reference" />
+    <!--
+    <attr name="newsTextGrey" format="color" />  
+    <attr name="newsText" format="color" />  
+    <attr name="newsTextColor" format="color" />  
+    <attr name="newsCommentColor" format="color" />  
+    <attr name="newsTextHightlightColor" format="color" />
+    -->
+
+
+    <!--
+    <attr name="dimensionValue" format="dimension" />  
+    <attr name="stringValue" format="string" />  
+    <attr name="referenceValue" format="color|reference" />  
+    -->
+    <attr name="curVisibility">
+        <enum name="show" value="0" />
+        <enum name="inshow" value="1" />
+        <enum name="hide" value="2" />
+    </attr>
+
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+    <declare-styleable name="FancyCoverFlow">
+        <attr name="unselectedAlpha" format="float" />
+        <attr name="unselectedSaturation" format="float" />
+        <attr name="unselectedScale" format="float" />
+        <attr name="maxRotation" format="integer" />
+        <attr name="scaleDownGravity" format="float" />
+        <attr name="actionDistance" format="integer">
+            <enum name="auto" value="2147483647" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SwitchButton">
+
+        <!-- Drawable to use as the "thumb" that switches back and forth. -->
+        <attr name="thumb" format="reference" />
+        <!-- Drawable to use as the "track" that the switch thumb slides within. -->
+        <attr name="track" format="reference" />
+        <!-- Minimum width for the switch component -->
+        <attr name="switchMinWidth" format="dimension" />
+        <!-- Minimum space between the switch and caption text -->
+        <attr name="switchPadding" format="dimension" />
+        <attr name="switchHeight" format="dimension" />
+        <attr name="circleHeight" format="dimension" />
+        <attr name="circleWidth" format="dimension" />
+    </declare-styleable>
+
+    <attr name="progress_unreach_color" format="color" />
+    <attr name="progress_unreach_height" format="dimension" />
+    <attr name="progress_reach_color" format="color" />
+    <attr name="progress_reach_height" format="dimension" />
+    <attr name="progress_text_color" format="color" />
+    <attr name="progress_text_size" format="dimension" />
+    <attr name="progress_text_offset" format="dimension" />
+
+    <declare-styleable name="SelfProgress">
+        <attr name="progress_unreach_color" />
+        <attr name="progress_unreach_height" />
+        <attr name="progress_reach_color" />
+        <attr name="progress_reach_height" />
+        <attr name="progress_text_color" />
+        <attr name="progress_text_size" />
+        <attr name="progress_text_offset" />
+    </declare-styleable>
+
+</resources>

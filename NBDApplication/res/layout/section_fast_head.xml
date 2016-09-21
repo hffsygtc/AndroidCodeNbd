@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_list_section"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/newsSectionBg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fast_section_ver_gap" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fast_section_txt_layout_height" >
+
+        <ImageView
+            android:layout_width="@dimen/fast_section_line_width"
+            android:layout_height="@dimen/fast_section_line_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/custom_page_hor_padding"
+            android:background="@drawable/fast_section_right_line" />
+
+        <TextView
+            android:id="@+id/section_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="2016年12月12日"
+            android:textColor="@color/custom_grey"
+            android:textSize="@dimen/font_text_size_24" />
+
+        <ImageView
+            android:layout_width="@dimen/fast_section_line_width"
+            android:layout_height="@dimen/fast_section_line_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/custom_page_hor_padding"
+            android:background="@drawable/fast_section_left_line" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fast_section_ver_gap" />
+
+</LinearLayout>

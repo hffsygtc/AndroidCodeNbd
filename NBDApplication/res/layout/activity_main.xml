@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myradio="http://schemas.android.com/apk/res/cn.com.nbd.nbdmobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 底部的四个选项Tab布局 -->
+
+    <RadioGroup
+        android:id="@+id/main_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_radio_height"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/newsBackground"
+        android:orientation="horizontal" >
+
+        <cn.com.nbd.nbdmobile.widget.MyRadioButton
+            android:id="@+id/news"
+            style="@style/radio_btn_style"
+            android:text="@string/main_news"
+            android:textColor="@color/custom_grey"
+            myradio:drawableHeightSize="@dimen/tab_image_height"
+            myradio:drawableTop="@drawable/tab_news"
+            myradio:drawableWidthSize="@dimen/tab_image_width" />
+
+        <cn.com.nbd.nbdmobile.widget.MyRadioButton
+            android:id="@+id/videos"
+            style="@style/radio_btn_style"
+            android:text="@string/main_videos"
+            android:textColor="@color/custom_grey"
+            myradio:drawableHeightSize="@dimen/tab_image_height"
+            myradio:drawableTop="@drawable/tab_video"
+            myradio:drawableWidthSize="@dimen/tab_image_width" />
+
+        <cn.com.nbd.nbdmobile.widget.MyRadioButton
+            android:id="@+id/paper"
+            style="@style/radio_btn_style"
+            android:text="@string/main_paper"
+            android:textColor="@color/custom_grey"
+            myradio:drawableHeightSize="@dimen/tab_image_height"
+            myradio:drawableTop="@drawable/tab_paper"
+            myradio:drawableWidthSize="@dimen/tab_image_width" />
+
+        <cn.com.nbd.nbdmobile.widget.MyRadioButton
+            android:id="@+id/activity"
+            style="@style/radio_btn_style"
+            android:text="@string/main_activity"
+            android:textColor="@color/custom_grey"
+            myradio:drawableHeightSize="@dimen/tab_image_height"
+            myradio:drawableTop="@drawable/tab_activity"
+            myradio:drawableWidthSize="@dimen/tab_image_width" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/bottom_divideline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_divline_width"
+        android:layout_above="@+id/main_radiogroup"
+        android:background="@color/custom_divline" />
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_divideline" />
+
+    <ImageView
+        android:id="@+id/main_self_btn"
+        android:layout_width="@dimen/bottom_self_img_size"
+        android:layout_height="@dimen/bottom_self_img_size"
+        android:layout_above="@+id/main_radiogroup"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/custom_page_hor_padding"
+        android:layout_marginRight="@dimen/custom_page_hor_padding"
+        android:src="@drawable/self_icon" />
+    
+    
+    <TextView 
+        android:id="@+id/main_night_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    
+    <RelativeLayout 
+        android:id="@+id/main_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></RelativeLayout>
+
+</RelativeLayout>

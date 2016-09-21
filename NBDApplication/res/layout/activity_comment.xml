@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/newsSelfPageBg" >
+    
+    
+        <LinearLayout
+        android:id="@+id/comment_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_detail_bottom_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/custom_white"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/news_detail_comment_edit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/news_detail_edittext_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/news_detail_hor_padding"
+            android:layout_marginRight="@dimen/news_detail_hor_padding"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg_selector"
+            android:focusable="false"
+            android:hint="	我来发表看法..."
+            android:textSize="@dimen/font_text_size_30" />
+    </LinearLayout>
+
+        <TextView  
+            android:id="@+id/comment_bottom_div_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:background="@color/custom_divline"
+            android:layout_above="@+id/comment_bottom_layout"
+            />
+        
+    <cn.com.nbd.nbdmobile.view.WithoutSectionCustomListViewUnused
+        android:id="@+id/comment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/feature_deatil_title_height"
+        android:layout_above="@+id/comment_bottom_div_line"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/comment_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_setting_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bg_white" >
+
+        <ImageView
+            android:id="@+id/comment_back_btn"
+            android:layout_width="@dimen/self_center_back_btn_width"
+            android:layout_height="@dimen/self_center_back_btn_width"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:layout_marginTop="@dimen/self_center_top_padding"
+            android:background="@drawable/article_detail_back" />
+
+        <TextView
+            android:id="@+id/comment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:layout_toRightOf="@+id/comment_back_btn"
+            android:text="8条评论"
+            android:textColor="@color/custom_grey"
+            android:textSize="@dimen/font_text_size_36" />
+
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/comment_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/newsCover"
+        
+        />
+
+</RelativeLayout>

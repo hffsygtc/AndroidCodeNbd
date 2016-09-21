@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_gray_eaeaea">#eaeaea</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="color_black_333333">#333333</color>
+    <color name="color_grey_999999">#999999</color>
+    <color name="color_black_d9d9d9">#d9d9d9</color>
+    <color name="color_purple_bd6aff">#bd6aff</color>
+    <color name="GreyWhite_has_alpha">#66FAFAFA</color>
+    <color name="transparent">#00000000</color>
+    <color name="halftransparent">#50000000</color>
+    <color name="action_bar_tittle_color_555555">#555555</color>
+    <color name="tab_bar_background">#40feffff </color>
+    <color name="bottom_tab_txt">#7e7e7e</color>
+    <color name="bottom_tab_click_txt">#cf2118</color>
+    <color name="scroll_bottom_background">#20010101</color>
+    <color name="main_bottom_divline">#dfdfdf</color>
+    <color name="main_title_txt">#eb716b</color>
+    <color name="main_title_txt_hightlight">#ffffff</color>
+    <color name="main_paper_canlender_title">#020202</color>
+    <color name="main_paper_canlender_data">#7f7e7f</color>
+    <color name="main_paper_canlender_data_empty">#d8d7d7</color>
+    <color name="main_paper_canlender_data_check">#ffffff</color>
+    <color name="news_items_title_color">#323232</color>
+    <color name="news_items_comment_color">#898989</color>
+
+    <!-- <color name="news_title_background">#d53e36</color> -->
+    <color name="news_fast_title_background">#ebebeb</color>
+    <color name="news_point_black">#010101</color>
+    <color name="news_point_red">#f52929</color>
+    <color name="news_point_green">#03973c</color>
+    <color name="kx_news_share_txt">#757575</color>
+    <color name="fast_news_section_time">#757575</color>
+
+    <!-- <color name="kx_news_hight_txt">#d53e36</color> -->
+    <color name="kx_news_normal_time_txt">#a1a1a1</color>
+
+    <!-- 快讯代码动态配色，暂时单独写 -->
+    <color name="kx_news_normal_txt_light">#323232</color>
+    <color name="kx_news_highlight_txt_light">#d53e36</color>
+    <color name="toggle_bg">#ececec</color>
+
+    <!-- 文章详情页特殊配色 -->
+
+    <color name="news_detail_bottom_line">#d0cfd0</color>
+    <color name="news_top_scroll_bottom_textcolor">#fdfefe</color>
+    <color name="video_item_background">#f4f5f6</color>
+    <color name="video_item_cover">#66000000</color>
+    <color name="video_share_txt">#7f7e7f</color>
+    <color name="paper_title_txt">#01479d</color>
+    <color name="text_colore">#55f55130</color>
+    <color name="activity_main_self_center_bg">#ebebeb</color>
+    <color name="activity_main_login_text">#060606</color>
+    <color name="activity_main_divline">#c9c9c9</color>
+    <color name="activity_main_self_center_item_bg">#fffefe</color>
+    <color name="activity_main_self_center_item_text">#040404</color>
+    <color name="activity_main_self_setting_hint_text">#c3c3c3</color>
+    <color name="activity_login_forget_red">#cf2118</color>
+    <color name="activity_gallery_title">#010101</color>
+    <color name="activity_gallery_bottom">#242525</color>
+    <color name="activity_gallery_content_bg">#99000000</color>
+    <color name="activity_gallery_content_read">#f91100</color>
+    <color name="activity_gallery_content_white">#fefcfc</color>
+    <color name="article_dialog_cancle_bg">#fafafa</color>
+    <color name="article_dialog_content_bg">#f4f5f6</color>
+    <color name="search_activity_content">#8c8c8c</color>
+
+    
+    <!-- 通用字体颜色汇总 -->
+    <color name="custom_white">#ffffff</color>
+    <color name="custom_grey">#757575</color>
+    <color name="custom_pull_down">#b4b4b4</color>
+    <color name="custom_red">#cf2118</color>
+    <color name="custom_grey_white">#d7d7d7</color>
+    <color name="comment_line">#e6e5e6</color>
+    <color name="custom_divline">#c4c4c4</color>
+
+    <!-- 日间主题的配色 -->
+    <color name="day_item_background">#ffffff</color>
+    <color name="day_common_background">#f4f5f6</color>
+    <color name="day_common_background_click">#f1f1f1</color>
+    <color name="day_section_background">#ececec</color>
+    <color name="day_black">#000000</color>
+    <color name="day_cover">#00FFFFFF</color>
+
+    <!-- 夜间主题的配色 -->
+    <color name="night_common_background">#252525</color>
+    <color name="night_common_background_click">#3b3b3b</color>
+    <color name="night_section_background">#3c3c3c</color>
+    <color name="night_black">#7f7f7f</color>
+    <color name="night_cover">#66000000</color>
+   
+    <color name="light_page_bg">#f4f5f6</color>
+    <color name="light_page_click_bg">#55c3c3c3</color>
+    <!--日间
+    <color name="light_title_bg">#d53e36</color>
+    <color name="light_news_detail_title_bg">#feffff</color>
+    <color name="light_news_detail_bottom_bg">#f4f5f6</color>
+    <color name="light_news_text_color">#323232</color>
+    <color name="light_news_comment_color">#a1a1a1</color>
+    <color name="light_news_highlight_color">#d53e36</color>
+    -->
+    <!--
+    夜间
+    <color name="night_title_bg">#000000</color>
+    <color name="night_page_bg">#ffffff</color>
+    <color name="night_news_text_color">#323232</color>
+    <color name="night_news_comment_color">#a1a1a1</color>
+    <color name="night_news_highlight_color">#d53e36</color>
+    -->
+
+</resources>

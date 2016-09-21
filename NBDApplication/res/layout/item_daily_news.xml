@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dailynews_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/newsSelfPageBg"
+    android:orientation="vertical" >
+
+    <!-- 标准新闻布局，图片配文字 -->
+
+    <RelativeLayout
+        android:id="@+id/dailynewsl_news_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/newsSelfItemBg" >
+
+        <RelativeLayout
+            android:id="@+id/dailynews_news_tag_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/dailynews_tags_btm_div"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/feature_deatil_ver_gap"
+                android:layout_alignParentTop="true"
+                android:background="?attr/newsSelfPageBg" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/main_paper_calender_topmonth_width"
+                android:layout_height="@dimen/main_paper_calender_topmonth_height"
+                android:layout_below="@+id/dailynews_tags_btm_div"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/canlender_month" >
+
+                <TextView
+                    android:id="@+id/dailynews_news_tag_txt"
+                    android:layout_width="@dimen/feature_deatil_news_tag_width"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxEms="4"
+                    android:singleLine="true"
+                    android:text="这是个标签"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_text_size_30" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dailynews_article_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dailynews_news_tag_layout"
+            android:paddingBottom="@dimen/news_item_padding"
+            android:paddingLeft="@dimen/news_hor_gap"
+            android:paddingRight="@dimen/news_hor_gap"
+            android:paddingTop="@dimen/news_item_padding" >
+
+            <TextView
+                android:id="@+id/dailynews_article_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:maxLines="2"
+                android:text="全球货币掀贬值潮 上海有外企人员奖金改发美元英国是真的数据库间的"
+                android:textColor="?attr/newsTextBlack"
+                android:textSize="@dimen/font_text_size_32" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_divline_width"
+            android:layout_marginLeft="@dimen/news_hor_gap"
+            android:layout_marginRight="@dimen/news_hor_gap"
+            android:background="@color/custom_divline" />
+    </RelativeLayout>
+
+</LinearLayout>

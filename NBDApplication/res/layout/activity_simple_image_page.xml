@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/newsSelfPageBg" >
+
+    <RelativeLayout
+        android:id="@+id/simple_page_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_setting_title_height"
+        android:background="@drawable/self_setting_title_bg" >
+
+        <ImageView
+            android:id="@+id/simple_page_back"
+            android:layout_width="@dimen/self_center_back_btn_width"
+            android:layout_height="@dimen/self_center_back_btn_width"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:layout_marginTop="@dimen/self_center_top_padding"
+            android:background="@drawable/self_setting_back_btn" />
+
+        <TextView
+            android:id="@+id/simple_page_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:layout_toRightOf="@+id/simple_page_back"
+            android:text="金币"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_text_size_36" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/simple_mid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/simple_page_img"
+            android:layout_width="@dimen/jb_default_width"
+            android:layout_height="@dimen/jb_default_height"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/jb_developing"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/simple_page_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/simple_page_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/custom_page_ver_padding"
+            android:text="程序员正在努力开发中..."
+            android:textColor="@color/custom_grey" />
+    </RelativeLayout>
+    
+    
+        <RelativeLayout
+        android:id="@+id/simple_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simple_page_title"
+        android:layout_marginTop="@dimen/custom_page_ver_padding">
+
+        <ImageView
+            android:id="@+id/simple_page_top_img"
+            android:layout_width="@dimen/jb_default_height"
+            android:layout_height="@dimen/jb_default_height"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/nbd_logo"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/simple_page_top_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/simple_page_top_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/custom_page_ver_padding"
+            android:text="每日经济新闻官方版"
+            android:textColor="@color/custom_grey" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/newsCover" />
+
+</RelativeLayout>

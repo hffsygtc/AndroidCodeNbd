@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="LePlayerSDK_vod">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LePlayerSdk/libs/LePlayerSDK_vod.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

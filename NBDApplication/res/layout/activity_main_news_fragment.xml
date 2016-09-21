@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:nbd="http://schemas.android.com/apk/res/cn.com.nbd.nbdmobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/newsBackground" >
+
+    <!-- 新闻主题的内容容器 -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/news_title_height"
+        android:background="?attr/newsBackground" >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/main_news_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/news_title_layout_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_news_title_background" >
+
+        <!-- 右上角搜索的布局 -->
+        <RelativeLayout
+            android:id="@+id/main_title_search_layout"
+            android:layout_width="@dimen/news_title_item_imglayout_width"
+            android:layout_height="@dimen/news_title_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/custom_page_hor_padding" >
+
+            <ImageView
+                android:layout_width="@dimen/news_title_item_img_width"
+                android:layout_height="@dimen/news_title_item_img_width"
+                android:layout_centerInParent="true"
+                android:src="@drawable/search" />
+        </RelativeLayout>
+        <!-- 顶部可点击变色的选项卡容器控件 -->
+
+        <cn.com.nbd.nbdmobile.view.ViewPagerTab
+            android:id="@+id/tab"
+            android:layout_width="@dimen/news_title_tab_width"
+            android:layout_height="@dimen/news_title_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            nbd:visible_tab_count="4" >
+        </cn.com.nbd.nbdmobile.view.ViewPagerTab>
+    </RelativeLayout>
+
+</RelativeLayout>

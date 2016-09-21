@@ -1,0 +1,277 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/newsSelfPageBg" >
+
+    <RelativeLayout
+        android:id="@+id/self_setting_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_setting_title_height"
+        android:background="@drawable/self_setting_title_bg" >
+
+        <ImageView
+            android:id="@+id/self_setting_back_btn"
+            android:layout_width="@dimen/self_center_back_btn_width"
+            android:layout_height="@dimen/self_center_back_btn_width"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:layout_marginTop="@dimen/self_center_top_padding"
+            android:background="@drawable/self_setting_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:layout_toRightOf="@+id/self_setting_back_btn"
+            android:text="个人设置"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_text_size_36" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/self_setting_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_setting_head_layout_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/self_setting_top_margin"
+        android:background="?attr/newsSelfItemBg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:text="头像设置"
+            android:textColor="?attr/newsTextBlack"
+            android:textSize="@dimen/font_text_size_30" />
+
+        <ImageView
+            android:id="@+id/self_setting_head_img"
+            android:layout_width="@dimen/self_center_headimg_width"
+            android:layout_height="@dimen/self_center_headimg_width"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/self_center_hor_padding"
+            android:background="@drawable/self_center_default_head" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/self_setting_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_center_item_height"
+        android:layout_below="@+id/self_setting_head_layout"
+        android:layout_marginTop="@dimen/self_center_ver_padding"
+        android:background="?attr/newsSelfItemBg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:text="昵称"
+            android:textColor="?attr/newsTextBlack"
+            android:textSize="@dimen/font_text_size_30" />
+
+        <ImageView
+            android:layout_width="@dimen/self_enter_arrow_width"
+            android:layout_height="@dimen/self_enter_arrow_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/self_center_hor_padding"
+            android:background="@drawable/self_enter_arrow" />
+
+        <TextView
+            android:id="@+id/self_setting_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/self_setting_right_margin"
+            android:text="RicherHe"
+            android:textColor="@color/activity_main_self_setting_hint_text" />
+    </RelativeLayout>
+   
+    <RelativeLayout
+        android:id="@+id/self_setting_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_center_item_height"
+        android:layout_below="@+id/self_setting_name_layout"
+        android:layout_marginTop="@dimen/self_center_ver_padding"
+        android:background="?attr/newsSelfItemBg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:text="修改密码"
+            android:textColor="?attr/newsTextBlack"
+            android:textSize="@dimen/font_text_size_30" />
+
+        <ImageView
+            android:layout_width="@dimen/self_enter_arrow_width"
+            android:layout_height="@dimen/self_enter_arrow_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/self_center_hor_padding"
+            android:background="@drawable/self_enter_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/self_setting_sina_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_center_item_height"
+        android:layout_below="@+id/self_setting_password_layout"
+        android:layout_marginTop="@dimen/self_center_ver_padding"
+        android:background="?attr/newsSelfItemBg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:text="新浪微博"
+            android:textColor="?attr/newsTextBlack"
+            android:textSize="@dimen/font_text_size_30" />
+
+        <ImageView
+            android:layout_width="@dimen/self_enter_arrow_width"
+            android:layout_height="@dimen/self_enter_arrow_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/self_center_hor_padding"
+            android:background="@drawable/self_enter_arrow" />
+
+        <TextView
+            android:id="@+id/self_setting_sina_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/self_setting_right_margin"
+            android:text="绑定"
+            android:textColor="@color/activity_main_self_setting_hint_text" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/self_setting_sina_gap"
+        android:layout_width="@dimen/self_center_item_hor_gap"
+        android:layout_height="@dimen/custom_divline_width"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/self_setting_sina_layout"
+        android:background="?attr/newsSelfItemBg" />
+
+    <RelativeLayout
+        android:id="@+id/self_setting_weixin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_center_item_height"
+        android:layout_below="@+id/self_setting_sina_gap"
+        android:background="?attr/newsSelfItemBg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:text="腾讯微信 "
+            android:textColor="?attr/newsTextBlack"
+            android:textSize="@dimen/font_text_size_30" />
+
+        <ImageView
+            android:layout_width="@dimen/self_enter_arrow_width"
+            android:layout_height="@dimen/self_enter_arrow_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/self_center_hor_padding"
+            android:background="@drawable/self_enter_arrow" />
+
+        <TextView
+            android:id="@+id/self_setting_weixin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/self_setting_right_margin"
+            android:text="绑定"
+            android:textColor="@color/activity_main_self_setting_hint_text" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/self_setting_weixin_gap"
+        android:layout_width="@dimen/self_center_item_hor_gap"
+        android:layout_height="@dimen/custom_divline_width"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/self_setting_weixin_layout"
+        android:background="?attr/newsSelfItemBg" />
+
+    <RelativeLayout
+        android:id="@+id/self_setting_qq_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_center_item_height"
+        android:layout_below="@+id/self_setting_weixin_gap"
+        android:background="?attr/newsSelfItemBg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/self_center_hor_padding"
+            android:text="腾讯QQ "
+            android:textColor="?attr/newsTextBlack"
+            android:textSize="@dimen/font_text_size_30" />
+
+        <ImageView
+            android:layout_width="@dimen/self_enter_arrow_width"
+            android:layout_height="@dimen/self_enter_arrow_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/self_center_hor_padding"
+            android:background="@drawable/self_enter_arrow" />
+
+        <TextView
+            android:id="@+id/self_setting_qq_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/self_setting_right_margin"
+            android:text="绑定"
+            android:textColor="@color/activity_main_self_setting_hint_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/self_setting_exit_layout"
+        android:layout_width="@dimen/self_setting_exit_width"
+        android:layout_height="@dimen/self_setting_exit_height"
+        android:layout_below="@+id/self_setting_qq_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/self_setting_exit_top_margin"
+        android:background="@drawable/self_setting_exit_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_text_size_30" />
+    </RelativeLayout>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/newsCover"
+        
+        />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/normal_article_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/custom_page_ver_padding"
+    android:paddingLeft="@dimen/custom_page_hor_padding"
+    android:paddingRight="@dimen/custom_page_hor_padding"
+    android:paddingTop="@dimen/custom_page_ver_padding">
+
+    <ImageView
+        android:id="@+id/normal_article_img"
+        android:layout_width="@dimen/news_item_image_width"
+        android:layout_height="@dimen/news_item_image_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/normal_article_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/custom_page_hor_padding"
+        android:layout_toRightOf="@+id/normal_article_img"
+        android:maxLines="2"
+        android:text="@string/news_item_default_title"
+        android:textColor="?attr/newsTextBlack"
+        android:textSize="@dimen/font_text_size_32" />
+
+    <TextView
+        android:id="@+id/normal_article_commonnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/news_item_default_reading"
+        android:textColor="@color/custom_grey"
+        android:textSize="@dimen/font_text_size_24" />
+
+    <ImageView
+        android:id="@+id/normal_article_tag_img"
+        android:layout_width="@dimen/news_item_tags_width"
+        android:layout_height="@dimen/news_item_tags_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/custom_page_hor_padding"
+        android:layout_toRightOf="@+id/normal_article_img" />
+
+    <TextView
+        android:id="@+id/normal_article_ori_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/news_hor_gap"
+        android:layout_toRightOf="@+id/normal_article_tag_img"
+        android:textColor="@color/custom_grey"
+        android:textSize="@dimen/font_text_size_24" />
+
+    <!-- 推广样式的广告的图标在右下角 -->
+    <ImageView
+        android:id="@+id/adv_article_tag_img"
+        android:layout_width="@dimen/news_item_tags_width"
+        android:layout_height="@dimen/news_item_tags_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="LeNetWork">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LePlayerSdk/libs/LeNetWork.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

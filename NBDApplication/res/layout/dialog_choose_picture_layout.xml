@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:nbd="http://schemas.android.com/apk/res/cn.com.nbd.nbdmobile"
+    android:id="@+id/photo_dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/photo_dialog_canle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_cancle_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/article_dialog_cancle_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_text_size_30" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/photo_dialog_chooes_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_item_layout_height"
+        android:layout_above="@+id/photo_dialog_canle_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@color/article_dialog_content_bg" >
+
+        <RelativeLayout
+            android:id="@+id/photo_dialog_xc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_item_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/article_dialog_content_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="从相册选择"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_text_size_30" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/photo_dialog_div_btm"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/photo_dialog_xc_layout"
+            android:background="@color/color_gray_eaeaea" />
+
+        <RelativeLayout
+            android:id="@+id/photo_dialog_pz_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_item_height"
+            android:layout_above="@+id/photo_dialog_div_btm"
+            android:layout_centerHorizontal="true"
+            android:background="@color/article_dialog_content_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="拍照"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_text_size_30" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

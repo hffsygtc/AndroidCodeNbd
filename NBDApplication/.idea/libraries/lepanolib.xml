@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="lepanolib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LePlayerSdk/libs/lepanolib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/collection_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/newsSelfItemBg"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/collection_news_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/newsSelfItemBg" >
+
+        <!-- 新闻内容的布局 -->
+
+        <LinearLayout
+            android:id="@+id/collection_article_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 标准新闻布局，图片配文字 -->
+
+            <RelativeLayout
+                android:id="@+id/collection_normal_article_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/collection_normal_news_item_height"
+                android:paddingBottom="@dimen/news_item_padding"
+                android:paddingLeft="@dimen/news_hor_gap"
+                android:paddingRight="@dimen/news_hor_gap"
+                android:paddingTop="@dimen/news_item_padding" >
+
+                <TextView
+                    android:id="@+id/collection_normal_article_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:maxLines="2"
+                    android:text="全球货币掀贬值潮 上海有外企人员奖金改发美元"
+                    android:textColor="?attr/newsTextBlack"
+                    android:textSize="@dimen/font_text_size_32" />
+
+                <ImageView
+                    android:id="@+id/collection_normal_article_tag"
+                    android:layout_width="@dimen/news_item_tags_width"
+                    android:layout_height="@dimen/news_item_tags_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/article_tag_picture"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/collection_normal_article_commonnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="1234 评论"
+                    android:textColor="@color/kx_news_share_txt"
+                    android:textSize="@dimen/font_text_size_24" />
+            </RelativeLayout>
+
+            <!-- 三张图片的新闻布局 -->
+
+            <RelativeLayout
+                android:id="@+id/collection_threepic_article_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/news_item_padding"
+                android:paddingLeft="@dimen/news_hor_gap"
+                android:paddingRight="@dimen/news_hor_gap"
+                android:paddingTop="@dimen/news_item_padding"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/collection_threepic_article_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:maxLines="1"
+                    android:text="AADADASDDSDADA"
+                    android:textColor="?attr/newsTextBlack"
+                    android:textSize="@dimen/font_text_size_32" />
+
+                <LinearLayout
+                    android:id="@+id/collection_threepic_img_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/news_item_threepic_layout_height"
+                    android:layout_below="@+id/collection_threepic_article_title"
+                    android:layout_marginTop="@dimen/news_item_threepic_gap"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/collection_threepic_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="@dimen/news_item_threepic_gap"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/collection_threepic_middle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="@dimen/news_item_threepic_gap"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/collection_threepic_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/collection_threepic_article_commonnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/collection_threepic_img_layout"
+                    android:layout_marginTop="@dimen/news_item_padding"
+                    android:text="1234 评论"
+                    android:textColor="@color/kx_news_share_txt"
+                    android:textSize="@dimen/font_text_size_24" />
+
+                <ImageView
+                    android:id="@+id/collection_threepic_article_tag_img"
+                    android:layout_width="@dimen/news_item_tags_width"
+                    android:layout_height="@dimen/news_item_tags_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/collection_threepic_img_layout"
+                    android:layout_marginTop="@dimen/news_item_padding"
+                    android:src="@drawable/article_tag_picture" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reading_article_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/reading_news_item_height"
+                android:paddingLeft="@dimen/news_hor_gap"
+                android:paddingRight="@dimen/news_hor_gap"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/reading_article_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/news_item_padding"
+                    android:maxLines="2"
+                    android:text="全球货币掀贬值潮 上海有外企人员奖金改发美元"
+                    android:textColor="?attr/newsTextBlack"
+                    android:textSize="@dimen/font_text_size_32" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/custom_divline_width"
+        android:layout_marginLeft="@dimen/news_hor_gap"
+        android:layout_marginRight="@dimen/news_hor_gap"
+        android:background="@color/custom_divline" />
+
+</LinearLayout>

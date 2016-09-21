@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="letvadlib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LePlayerSdk/libs/letvadlib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

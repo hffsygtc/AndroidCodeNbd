@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/article_more_dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:id="@+id/comment_dialog_top_gap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_input_layout_height"
+        android:layout_alignParentTop="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/comment_input_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comment_input_layout_height"
+        android:layout_below="@+id/comment_dialog_top_gap"
+        android:background="@color/day_section_background"
+        android:paddingBottom="@dimen/comment_padding_20"
+        android:paddingLeft="@dimen/comment_padding_30"
+        android:paddingRight="@dimen/comment_padding_30"
+        android:paddingTop="@dimen/comment_padding_30" >
+
+        <EditText
+            android:id="@+id/comment_input_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_input_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/day_item_background"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:hint="	我来发表看法..."
+            android:paddingLeft="@dimen/custom_page_hor_padding"
+            android:paddingRight="@dimen/custom_page_hor_padding"
+            android:paddingTop="@dimen/custom_page_ver_padding"
+            android:textColor="@color/custom_grey"
+            android:textSize="@dimen/font_text_size_30" />
+
+        <RelativeLayout
+            android:id="@+id/comment_input_send_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/comment_input_send_height"
+            android:layout_alignParentBottom="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="正能量发言有机会成为精华评论哟！"
+                android:textColor="@color/custom_grey"
+                android:textSize="@dimen/font_text_size_18" />
+
+            <ImageView
+                android:id="@+id/comment_input_send_btn"
+                android:layout_width="@dimen/comment_input_send_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/comment_send_grey" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

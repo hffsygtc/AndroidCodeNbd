@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myradio="http://schemas.android.com/apk/res/com.nbd.nbdnews"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.com.nbd.nbdmobile.view.CustomListViewUnused
+        android:id="@+id/pullListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none" />
+<!--     <com.handmark.pulltorefresh.library.PullToRefreshHeaderListView
+        android:id="@+id/pullListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none" /> -->
+
+</RelativeLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gp_point_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/news_gppoint_height"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/left_point_layout"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/news_gppoint_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/news_gppoint_verpadding"
+                android:paddingTop="@dimen/news_gppoint_verpadding" >
+
+                <TextView
+                    android:id="@+id/lpoint_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="-"
+                    android:textColor="@color/news_point_black"
+                    android:textSize="@dimen/font_text_size_26" />
+
+                <TextView
+                    android:id="@+id/lpoint_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="-"
+                    android:textColor="@color/news_point_red"
+                    android:textSize="@dimen/font_text_size_40" />
+
+                <TextView 
+                    android:id="@+id/lbottom_point_mid_div"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/lpoint_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/lbottom_point_mid_div"
+                    android:layout_marginRight="@dimen/news_gppoint_bottom_gap"
+                    android:text="-"
+                    android:textColor="@color/news_point_red"
+                    android:textSize="@dimen/font_text_size_24" />
+
+                <TextView
+                    android:id="@+id/lpoint_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/lbottom_point_mid_div"
+                    android:layout_marginLeft="@dimen/news_gppoint_bottom_gap"
+                    android:text="-"
+                    android:textColor="@color/news_point_red"
+                    android:textSize="@dimen/font_text_size_24" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_gray_eaeaea" />
+
+            <RelativeLayout
+                android:id="@+id/mid_point_layout"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/news_gppoint_height"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/news_gppoint_verpadding"
+                android:paddingTop="@dimen/news_gppoint_verpadding" >
+
+                <TextView
+                    android:id="@+id/mpoint_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="-"
+                    android:textColor="@color/news_point_black"
+                    android:textSize="@dimen/font_text_size_26" />
+
+                <TextView
+                    android:id="@+id/mpoint_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="-"
+                    android:textColor="@color/news_point_red"
+                    android:textSize="@dimen/font_text_size_40" />
+
+                <TextView 
+                    android:id="@+id/mbottom_point_mid_div"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/mpoint_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/mbottom_point_mid_div"
+                    android:layout_marginRight="@dimen/news_gppoint_bottom_gap"
+                    android:text="-"
+                    android:textColor="@color/news_point_red"
+                    android:textSize="@dimen/font_text_size_24" />
+
+                <TextView
+                    android:id="@+id/mpoint_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/mbottom_point_mid_div"
+                    android:layout_marginLeft="@dimen/news_gppoint_bottom_gap"
+                    android:text="-"
+                    android:textColor="@color/news_point_red"
+                    android:textSize="@dimen/font_text_size_24" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_gray_eaeaea" />
+
+            <RelativeLayout
+                android:id="@+id/right_point_layout"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/news_gppoint_height"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/news_gppoint_verpadding"
+                android:paddingTop="@dimen/news_gppoint_verpadding" >
+
+                <TextView
+                    android:id="@+id/rpoint_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="-"
+                    android:textColor="@color/news_point_black"
+                    android:textSize="@dimen/font_text_size_26" />
+
+                <TextView
+                    android:id="@+id/rpoint_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="-"
+                    android:textColor="@color/news_point_red"
+                    android:textSize="@dimen/font_text_size_40" />
+
+                 <TextView 
+                    android:id="@+id/rbottom_point_mid_div"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/rpoint_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/rbottom_point_mid_div"
+                    android:layout_marginRight="@dimen/news_gppoint_bottom_gap"
+                    android:text="-"
+                    android:textColor="@color/news_point_red"
+                    android:textSize="@dimen/font_text_size_24" />
+
+                <TextView
+                    android:id="@+id/rpoint_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/rbottom_point_mid_div"
+                    android:layout_marginLeft="@dimen/news_gppoint_bottom_gap"
+                    android:text="-"
+                    android:textColor="@color/news_point_red"
+                    android:textSize="@dimen/font_text_size_24" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_gray_eaeaea" />
+</LinearLayout>
